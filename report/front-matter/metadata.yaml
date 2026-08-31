@@ -1,0 +1,46 @@
+---
+#Configuraciones
+title: "Informe de Trabajo Final"
+papersize: a4
+geometry: margin=2.5cm
+toc: true
+toc-title: "Índice General"
+code-block-font-size: \small
+
+#Portada
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \rfoot{Página \thepage}
+  - \lfoot{1ASI0729 - Desarrollo de Aplicaciones Open Source (NRC 7737)}
+  - \renewcommand{\headrulewidth}{0pt}
+  - \renewcommand{\footrulewidth}{0.4pt}
+  - |
+    \let\oldmaketitle\maketitle
+    \renewcommand{\maketitle}{
+      \begin{titlepage}
+        \thispagestyle{empty}
+        \centering
+        \includegraphics[width=5cm]{report/assets/upc-logo.png}\\[0.3cm]
+        {\Large \textbf{UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS}}\\[2.0cm]
+        {\large Facultad de Ingeniería}\\[0.2cm]
+        {\large Carrera de Ingeniería de Software}\\[0.2cm]
+        {\small Ciclo 2026-02}\\[0.2cm]
+        {\small \textbf{Curso:} 1ASI0729 - Desarrollo de Aplicaciones Open Source (NRC 7737)}\\[0.2cm]
+        {\large \textbf{Informe de Trabajo Final}}\\[0.2cm]
+        {\small \textbf{Profesor:} Ivan Robles Fernández}\\[0.2cm]
+        {\large \textbf{Startup:} GreenDream}\\[0.2cm]
+        {\large \textbf{Producto:} CultivaTech}\\[0.2cm]
+        \textbf{Integrantes:}\\[0.2cm]
+        U202418405 - Condor Sandoval, Jean Pierre\\
+        U20231C995 - Munayco Apolaya, Maria Luisa\\
+        U202114790 - Santos Minaya, Renzo Peiro\\
+        U202318612 - Retuerto Rodriguez, Jorge Manuel\\
+        U20241B885 - Silva Hualpa, Rosangela Karen\\[2cm]
+        \vfill
+        {\large Agosto 2026}
+      \end{titlepage}
+    }
+---
