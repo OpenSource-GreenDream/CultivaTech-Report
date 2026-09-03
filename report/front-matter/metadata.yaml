@@ -7,8 +7,12 @@ toc: true
 toc-title: "Índice General"
 code-block-font-size: \small
 
-#Portada
 header-includes:
+  - \AtBeginDocument{\def\arraystretch{1.5}}
+  - \usepackage{array}
+  - \usepackage{float}
+  - \usepackage[export]{adjustbox}
+  - \renewcommand{\arraystretch}{1.5}
   - \usepackage{graphicx}
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
@@ -43,4 +47,11 @@ header-includes:
         {\large Agosto 2026}
       \end{titlepage}
     }
+  - |
+    \makeatletter
+    \AtBeginDocument{
+      \let\oldparbox\parbox
+      \renewcommand{\parbox}[3][t]{\oldparbox[c]{#2}{#3}}
+    }
+    \makeatother
 ---
