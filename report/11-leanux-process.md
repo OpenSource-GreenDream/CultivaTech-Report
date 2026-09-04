@@ -85,5 +85,8 @@ Suposición de caracteristicas necesarias para el logro de nuestro servicio.
   alfabetización digital **LOGRA** operar el sistema sin asistencia técnica **CON** una interfaz móvil
   basada en íconos, colores y alertas.*
 
+\newpage
+
 ## 1.2.2.4. Lean UX Canvas.
 
+![leanux-canvas](assets/chapter-01/leanux-canvas.png){width=8.5cm}
