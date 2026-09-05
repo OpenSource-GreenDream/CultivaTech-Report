@@ -14,6 +14,28 @@ Para el desarrollo del logo de TerraTech, hemos elegido un diseño que encapsula
 
 <img src="assets/chapter-04/terratech.png" alt="style guidelines" style="width: 200px; height: 150px;">
 
+**Typography**
+
+Para el diseño tipográfico de TerraTech, se ha seleccionado una combinación de fuentes que refleja modernidad y funcionalidad, priorizando la legibilidad en entornos al aire libre. La tipografía principal, Montserrat, fue elegida por su estructura geométrica y claridad en pantallas digitales, otorgando al diseño un aire profesional y tecnológico en nuestros encabezados. Para los párrafos y la visualización de datos de los sensores, hemos optado por Roboto, una fuente destacada por su alta legibilidad en dispositivos móviles, favoreciendo una experiencia visual atractiva e intuitiva para el agricultor.
+
+A continuación, se detallan las tipografías adoptadas para TerraTech:
+
+<img src="assets/chapter-04/typography.png" alt="style guidelines" style="width: 400px; height: 200px;">
+
+**Colors**
+
+La paleta de colores de TerraTech fue seleccionada para reflejar los valores de sostenibilidad, innovación y prevención que definen a nuestro sistema agrícola. Los tonos predominantes, azul marino profundo y verdes vibrantes, junto con acentos en tonos tierra, evocan sensaciones de naturaleza, solidez y alta tecnología, elementos esenciales para una herramienta orientada al control y optimización de recursos hídricos. Esta combinación de colores refuerza la identidad visual del producto como una solución robusta, confiable y amigable para el usuario.
+
+A continuación, se detallan los colores seleccionados para TerraTech:
+
+<img src="assets/chapter-04/colors.png" alt="style guidelines" style="width: 300px; height: 150px;">
+
+**Spacing**
+
+El espaciado en TerraTech está cuidadosamente definido para garantizar una interfaz limpia, organizada y altamente táctil. Se emplea una separación uniforme y amplia entre elementos, lo que mejora la legibilidad de las métricas, evita errores de navegación en dispositivos móviles durante el trabajo de campo y aporta equilibrio visual al diseño.
+
+<img src="assets/chapter-04/spacing.png" alt="style guidelines" style="width: 300px; height: 150px;">
+
 ### 4.1.2. Web Style Guidelines
 
 TerraTech cuenta con un diseño web adaptable para garantizar una experiencia fluida en cualquier dispositivo, permitiendo su uso tanto en oficinas de gestión como en dispositivos móviles directamente en el campo. Utilizamos el patrón de diseño en forma de Z, ideal para destacar funciones clave como el monitoreo IoT en tiempo real y el análisis predictivo de cultivos. El logotipo se ubica en la esquina superior izquierda para fortalecer la identidad de marca, mientras que la barra de navegación y el llamado a la acción para solicitar una demostración se sitúan a la derecha, guiando al agricultor de forma intuitiva hacia la adopción de nuestra tecnología.
