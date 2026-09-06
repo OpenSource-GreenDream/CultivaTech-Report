@@ -41,6 +41,153 @@ Finalmente, las herramientas seleccionadas permiten cubrir las diferentes activi
 
 ## 5.1.2. Source Code Management.
 
+La gestión del codigo fuente de CultivaTech se realizará utilizando Git como sistema de control de versiones y GitHub como plataforma para almacenar los repositorios y facilitar el trabajo colaborativo entre los integrantes de GreenDream. Esta organización permitirá mantener un historial de cambios, controlar las diferentes versiones del proyecto y realizar una integración ordenada de los avances desarrollados durante los Sprints.
+
+A continuación, se presentan los usuarios de GitHub de los integrantes del equipo: 
+
+| **Integrante** | **Usuario GitHub** |
+|---|---|
+| Jean Pierre Condor Sandoval | `jeanpcs` |
+| Jorge Manuel Retuerto Rodriguez | `Calin1407` |
+| Maria Luisa Munayco Apolaya | `malumunayco` |
+| Renzo Piero Santos Minaya | `RSSint` |
+| Rongela Karen Silva Hualpa | `amazcoffee2-spec` |
+
+#### Repositorios del proyecto 
+
+Los productos que forman parte de la solución CultivaTech serán gestionados mediante repositorios en GitHub. Cada producto contará contará con un repositorio destinado a mantener su código fuente y los recursos necesarios para su desarrollo.
+
+| **Producto** | **Repositorio** |
+|---|---|
+| Informe | [Repositorio-Informe](https://github.com/OpenSource-GreenDream/CultivaTech-Report)|
+| Landing Page | [Repositorio-Landing-Page]() |
+| Frontend Web Application | [Repositorio-Frontend-Web-Application]() |
+| Web Services | [Repositorio-Web-Services]() |
+
+El repositorio correspondiente a los **Web Services** incluirá tanto el proyecto desarrollado con Spring Boot como los archivos asociados a las pruebas unitarias y de integración/aceptación, permitiendo verificar el correcto funcionamiento de los servicios implementados.
+
+#### GitFlow WorkFlow 
+
+Para organizar el desarrollo de CultivaTech, el equipo utilizará **GitFlow** como workflow de control de versiones. Este modelo permitirá separar el desarrollo de nuevas funcionalidades de las versiones estables del producto, facilitando la integración y revisión de los cambios realizados por los integrantes. 
+
+Las ramas principales cosideradas para el proyecto serán `main` y `develop`.
+
+**main**
+
+La rama `main` contendrá las versiones estables de los productos, correspondientes a versiones que hayan sido revisadas y que estén listas para su publicación o despliegue.
+
+**develop**
+
+La rama `develop` será utilizada como rama principal de integración durante el desarrollo. En ella se incorporarán las funcionalidades terminadas antes de formar parte de una versión estable.
+
+**feature**
+
+Cada nueva funcionalidad será desarrollada mediante una rama `feature` independiente, creada a partir de `develop`. Esto permitirá que cada integrante pueda trabajar sobre una funcionalidad específica sin afectar directamente la rama de desarrollo principal.
+
+La convención utilizada será:
+
+```text
+feature/<feature-name>
+```
+
+El nombre de la funcionalidad se escribirá en inglés, utilizando palabras descriptivas separadas por guiones.
+
+Algunos ejemplos relacionados con CultivaTech son:
+
+```text
+feature/soil-monitoring
+feature/crop-dashboard
+feature/user-authentication
+feature/soil-data-analysis
+```
+
+Una vez finalizada una funcionalidad, los cambios serán revisados mediante un **Pull Request** antes de integrarse a `develop`.
+
+**release**
+
+Las ramas `release` serán utilizadas cuando el equipo prepare una nueva versión de CultivaTech para su publicación. Estas ramas permitirán realizar pruebas finales, correcciones menores y ajustes necesarios antes de integrar la versión en `main`.
+
+La convención utilizada será:
+
+```text
+release/vX.Y.Z
+```
+
+Por ejemplo:
+
+```text
+release/v1.0.0
+release/v1.1.0
+release/v1.2.0
+```
+
+El nombre de las versiones seguirá el estándar **Semantic Versioning (SemVer)**, utilizando el formato:
+
+```text
+MAJOR.MINOR.PATCH
+```
+
+Donde:
+
+- **MAJOR:** se incrementa cuando se realizan cambios incompatibles con versiones anteriores.
+- **MINOR:** se incrementa cuando se agrega nueva funcionalidad manteniendo la compatibilidad.
+- **PATCH:** se incrementa cuando se realizan correcciones compatibles con la versión actual.
+
+**hotfix**
+
+Las ramas `hotfix` serán utilizadas para corregir errores críticos encontrados en una versión estable del producto. Estas ramas se crearán a partir de `main` para solucionar el problema sin incorporar cambios de desarrollo que todavía no hayan sido publicados.
+
+La convención utilizada será:
+
+```text
+hotfix/<bug-name>
+```
+
+Por ejemplo:
+
+```text
+hotfix/soil-data-error
+hotfix/login-validation
+hotfix/api-response-error
+```
+
+Después de solucionar y validar el error, los cambios serán integrados tanto en `main` como en `develop`, evitando que la corrección se pierda en futuras versiones.
+
+#### Conventional Commits
+
+Para mantener un historial de cambios claro y uniforme, el equipo utilizará **Conventional Commits** para definir los mensajes de los commits realizados durante el desarrollo.
+
+Los principales tipos de commit serán:
+
+| **Prefijo** | **Descripción** |
+|---|---|
+| `feat` | Implementación de una nueva funcionalidad. |
+| `fix` | Corrección de un error. |
+| `docs` | Cambios relacionados con la documentación. |
+| `style` | Cambios de formato que no modifican la lógica del sistema. |
+| `refactor` | Reestructuración del código sin modificar su comportamiento. |
+| `perf` | Mejoras relacionadas con el rendimiento. |
+| `test` | Creación o modificación de pruebas. |
+| `chore` | Tareas de mantenimiento, configuración o soporte del proyecto. |
+
+Los mensajes seguirán la estructura:
+
+```text
+<type>(<scope>): <description>
+```
+
+Por ejemplo:
+
+```text
+feat(frontend): add soil monitoring dashboard
+feat(api): add soil data endpoint
+fix(frontend): correct crop dashboard layout
+docs(scm): document source code management
+test(api): add soil monitoring tests
+```
+
+De esta manera, la utilización de Git, GitHub, GitFlow, Semantic Versioning y Conventional Commits permitirá mantener una gestión organizada del código fuente de CultivaTech, facilitar la colaboración entre los integrantes y asegurar la trazabilidad de los cambios realizados durante el desarrollo del proyecto.
+
 ## 5.1.3. Source Code Style Guide & Conventions.
 
 ## 5.1.4. Software Deployment Configuration.
