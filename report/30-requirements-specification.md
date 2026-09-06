@@ -145,10 +145,12 @@
 
 ## 3.2. Impact Mapping
 
-<img src="assets/images/cap3/impact-mapping.png" alt="impact mapping" style="width: 60%; max-width: 800px; height: 700px;">
+<img src="assets/chapther-03/impact-mapping.png" alt="impact mapping" style="width: 60%; max-width: 800px; height: 700px;">
 
 
 ## 3.3. Product Backlog
+
+<img src="assets/chapther-03/product-backlog.png" alt="impact mapping" style="width: 60%; max-width: 800px; height: 700px;">
 
 | # Orden | User Story Id | Título                                                      | Descripción                                                                                                                                                                                                                                                                                           | Story Points (1/2/3/5/8) |
 |:--------|:--------------|:------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------|
