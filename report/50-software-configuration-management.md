@@ -190,4 +190,226 @@ De esta manera, la utilización de Git, GitHub, GitFlow, Semantic Versioning y C
 
 ## 5.1.3. Source Code Style Guide & Conventions.
 
+### 5.1.3. Source Code Style Guide & Conventions
+
+Con el propósito de mantener un código fuente ordenado, legible y consistente, el equipo de GreenDream establecerá un conjunto de convenciones para el desarrollo de CultivaTech. Estas reglas serán aplicadas por todos los integrantes durante la implementación de la Landing Page, la Frontend Web Application y los Web Services.
+
+Para todos los lenguajes utilizados en la solución se empleará **nomenclatura en inglés**, incluyendo nombres de variables, funciones, clases, interfaces, componentes, archivos, métodos y otros elementos del código. Además, se tomarán como referencia las guías de estilo indicadas en el enunciado del proyecto.
+
+#### Convenciones generales
+
+Durante el desarrollo de CultivaTech se aplicarán las siguientes reglas:
+
+- Los nombres de los elementos del código estarán escritos en inglés.
+- Se utilizarán nombres descriptivos que permitan identificar fácilmente la función de cada elemento.
+- Se evitarán abreviaciones innecesarias.
+- Se mantendrá una correcta indentación y formato del código.
+- Se priorizará la reutilización de componentes, funciones y servicios.
+- Cada componente o clase deberá mantener una responsabilidad específica.
+- Los comentarios se utilizarán únicamente cuando sean necesarios para explicar lógica que no resulte evidente a partir del código.
+- Se evitará mantener código duplicado o innecesario.
+
+#### Convenciones para HTML
+
+Para la estructura de la Landing Page y las interfaces web se seguirán las recomendaciones de **HTML Style Guide and Coding Conventions** y **Google HTML/CSS Style Guide**.
+
+Las principales convenciones serán:
+
+- Utilizar elementos HTML semánticos como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Mantener una correcta jerarquía de encabezados utilizando `h1`, `h2`, `h3`, entre otros.
+- Utilizar atributos `alt` descriptivos en las imágenes.
+- Mantener una estructura HTML correctamente indentada.
+- Utilizar nombres descriptivos para los atributos y elementos relacionados con la interfaz.
+- Evitar el uso innecesario de estilos directamente dentro de los elementos HTML.
+
+Ejemplo:
+
+```html
+<section class="soil-monitoring">
+    <h2>Soil Monitoring</h2>
+    <p>Monitor the conditions of the crop soil.</p>
+</section>
+```
+
+#### Convenciones para CSS
+
+Para la definición de estilos se tomarán como referencia **Google HTML/CSS Style Guide** y las convenciones establecidas para CSS.
+
+Las principales reglas serán:
+
+- Utilizar nombres de clases descriptivos.
+- Utilizar `kebab-case` para las clases CSS.
+- Evitar estilos en línea cuando sea posible.
+- Mantener agrupadas las reglas relacionadas con cada componente.
+- Evitar la duplicación de estilos.
+- Eliminar reglas CSS que ya no sean utilizadas.
+
+Ejemplos:
+
+```text
+soil-monitoring
+crop-dashboard
+weather-card
+user-profile
+```
+
+#### Convenciones para JavaScript
+
+Para el código JavaScript utilizado en la Landing Page se seguirán las recomendaciones de las guías de estilo de JavaScript y las convenciones establecidas por el equipo.
+
+Se aplicarán las siguientes reglas:
+
+- Utilizar `const` cuando el valor de una variable no necesite cambiar.
+- Utilizar `let` cuando sea necesario modificar el valor de una variable.
+- Evitar el uso de `var`.
+- Utilizar nombres descriptivos para variables y funciones.
+- Utilizar funciones con responsabilidades específicas.
+- Evitar la duplicación de código.
+- Mantener una correcta indentación y formato.
+
+Ejemplo:
+
+```javascript
+const getSoilData = async () => {
+    // Implementation
+};
+```
+
+#### Convenciones para TypeScript
+
+Para el desarrollo de la Frontend Web Application con Angular se adoptarán las recomendaciones de **Angular Coding Style Guide** y **Google TypeScript Style Guide**.
+
+Las principales convenciones serán:
+
+- Utilizar `camelCase` para variables, propiedades y métodos.
+- Utilizar `PascalCase` para clases, interfaces y componentes.
+- Utilizar nombres descriptivos en inglés.
+- Mantener los componentes enfocados en una responsabilidad específica.
+- Separar la lógica de presentación de la lógica relacionada con los servicios.
+- Utilizar interfaces y tipos cuando permitan definir claramente la estructura de los datos.
+- Mantener una organización consistente de los archivos y módulos del proyecto.
+
+Ejemplo:
+
+```typescript
+export interface SoilData {
+    humidity: number;
+    ph: number;
+    fertility: number;
+}
+
+export class SoilMonitoringService {
+    getSoilData(): SoilData {
+        // Implementation
+    }
+}
+```
+
+Para los componentes de Angular se utilizará una nomenclatura consistente, por ejemplo:
+
+```text
+SoilMonitoringComponent
+CropDashboardComponent
+WeatherCardComponent
+```
+
+Mientras que los archivos utilizarán nombres descriptivos en `kebab-case`, por ejemplo:
+
+```text
+soil-monitoring.component.ts
+crop-dashboard.component.ts
+weather-card.component.ts
+```
+
+#### Convenciones para Java
+
+Para el desarrollo de los Web Services con Spring Boot se seguirá como referencia **Google Java Style Guide**, junto con las convenciones recomendadas para proyectos desarrollados con Spring Boot.
+
+Las principales reglas serán:
+
+- Utilizar `PascalCase` para clases.
+- Utilizar `camelCase` para variables y métodos.
+- Utilizar nombres descriptivos en inglés.
+- Utilizar interfaces cuando sea necesario definir contratos entre componentes.
+- Mantener una separación clara entre controllers, services, repositories y otras capas de la aplicación.
+- Aplicar principios de responsabilidad única en las clases.
+- Utilizar inyección de dependencias proporcionada por Spring.
+- Mantener los métodos pequeños y enfocados en una responsabilidad específica.
+
+Ejemplo:
+
+```java
+public interface SoilDataService {
+    SoilData getSoilData(Long id);
+}
+
+public class SoilDataServiceImpl implements SoilDataService {
+
+    @Override
+    public SoilData getSoilData(Long id) {
+        // Implementation
+    }
+}
+```
+
+Para las clases relacionadas con Spring Boot se utilizarán nombres descriptivos según su responsabilidad, por ejemplo:
+
+```text
+SoilDataController
+SoilDataService
+SoilDataRepository
+SoilData
+```
+
+#### Convenciones para Gherkin
+
+Para la definición de especificaciones y pruebas de aceptación se tomarán como referencia las **Gherkin Conventions for Readable Specifications**.
+
+Las especificaciones utilizarán las palabras clave de Gherkin para describir el comportamiento esperado de las funcionalidades de CultivaTech.
+
+Se utilizará la estructura:
+
+```gherkin
+Feature: Soil monitoring
+
+  Scenario: View soil conditions
+
+    Given the user has selected a crop
+    When the user opens the soil monitoring section
+    Then the system displays the soil conditions
+```
+
+Los escenarios estarán escritos de manera clara y orientada al comportamiento esperado del sistema, evitando describir detalles innecesarios de implementación.
+
+#### Convenciones de nomenclatura
+
+| **Elemento** | **Convención** | **Ejemplo** |
+|---|---|---|
+| Variables | `camelCase` | `soilHumidity` |
+| Funciones | `camelCase` | `getSoilData()` |
+| Métodos Java | `camelCase` | `calculateFertility()` |
+| Clases Java | `PascalCase` | `SoilDataService` |
+| Interfaces | `PascalCase` | `SoilDataRepository` |
+| Componentes Angular | `PascalCase` | `SoilMonitoringComponent` |
+| Archivos Angular | `kebab-case` | `soil-monitoring.component.ts` |
+| Clases CSS | `kebab-case` | `soil-monitoring` |
+| Constantes | `UPPER_SNAKE_CASE` | `MAX_SOIL_HUMIDITY` |
+| Endpoints REST | `kebab-case` | `/api/soil-data` |
+
+#### Referencias de estilo
+
+Las convenciones adoptadas para CultivaTech se basan en las siguientes referencias establecidas para el desarrollo de la solución:
+
+- **HTML Style Guide and Coding Conventions**
+- **Google HTML/CSS Style Guide**
+- **Gherkin Conventions for Readable Specifications**
+- **Angular Coding Style Guide**
+- **Google Java Style Guide**
+- **Google TypeScript Style Guide**
+- **Spring Boot Features**
+
+La aplicación de estas convenciones permitirá que el código de CultivaTech mantenga una estructura uniforme entre los integrantes del equipo, facilitando la lectura, revisión, integración y mantenimiento de los componentes desarrollados durante el proyecto.
+
+
 ## 5.1.4. Software Deployment Configuration.
+    
