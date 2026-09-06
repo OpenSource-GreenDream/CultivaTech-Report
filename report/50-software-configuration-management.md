@@ -412,4 +412,233 @@ La aplicación de estas convenciones permitirá que el código de CultivaTech ma
 
 
 ## 5.1.4. Software Deployment Configuration.
-    
+
+Con el propósito de garantizar un proceso de despliegue organizado, reproducible y consistente, el equipo de GreenDream ha definido una estrategia de Deployment basada en **GitHub, GitFlow y servicios de alojamiento en la nube**. Esta configuración permitirá gestionar de manera ordenada la publicación de los productos digitales que conforman CultivaTech, asegurando que únicamente las versiones previamente revisadas y validadas sean desplegadas en los entornos correspondientes.
+
+El proceso de despliegue contempla los tres productos principales de la solución: **Landing Page, Frontend Web Application y RESTful Web Services**.
+
+#### Flujo general de Deployment
+
+El proceso de despliegue inicia con el desarrollo de nuevas funcionalidades en ramas **feature**, creadas a partir de la rama **develop**. Una vez finalizada una funcionalidad, el desarrollador realiza un **Pull Request** para que los cambios sean revisados por los integrantes del equipo y se verifique el cumplimiento de las convenciones establecidas.
+
+Después de la aprobación del Pull Request, los cambios son integrados en la rama **develop**, donde se realizan las pruebas correspondientes. Cuando el producto alcanza un estado estable al finalizar el Sprint, se crea una rama **release** para realizar las validaciones finales antes de su publicación.
+
+Finalmente, la rama **release** es fusionada con **main**, la cual contiene las versiones estables del producto. A partir de esta rama se realiza el proceso de despliegue hacia el entorno de producción correspondiente.
+
+El flujo de trabajo aplicado se resume de la siguiente manera:
+
+```text
+feature/*
+      │
+      ▼
+develop
+      │
+      ▼
+release/vX.Y.Z
+      │
+      ▼
+main
+      │
+      ▼
+Deployment
+      │
+      ▼
+Production
+```
+
+En caso de detectarse un error crítico en producción, el equipo utilizará ramas **hotfix**, las cuales serán creadas a partir de **main**. Una vez corregido y validado el problema, los cambios serán integrados tanto en **main** como en **develop**, manteniendo sincronizadas las versiones del código fuente.
+
+---
+
+#### Landing Page Deployment
+
+La **Landing Page de CultivaTech** será desarrollada utilizando **HTML5, CSS3 y JavaScript** y será publicada mediante **GitHub Pages**, aprovechando su integración con los repositorios de GitHub para el alojamiento de sitios web estáticos.
+
+El proceso de despliegue contempla las siguientes actividades:
+
+1. El desarrollador implementa la funcionalidad correspondiente en una rama **feature**.
+2. Se crea un Pull Request hacia la rama **develop**.
+3. El equipo revisa los cambios y verifica el cumplimiento de las convenciones de código.
+4. Se realizan las pruebas funcionales correspondientes.
+5. Una vez que el producto alcanza un estado estable, se crea una rama **release**.
+6. La rama **release** es validada y posteriormente fusionada con **main**.
+7. GitHub Pages utiliza el contenido configurado del repositorio para publicar la Landing Page.
+8. Se verifica que la página se encuentre disponible correctamente mediante HTTPS.
+
+El flujo de despliegue de la Landing Page puede representarse de la siguiente manera:
+
+```text
+GitHub Repository
+       │
+       ▼
+feature/*
+       │
+       ▼
+develop
+       │
+       ▼
+release/vX.Y.Z
+       │
+       ▼
+main
+       │
+       ▼
+GitHub Pages
+       │
+       ▼
+Published Landing Page
+```
+
+Este procedimiento permitirá mantener una versión estable de la Landing Page y facilitar la publicación de nuevas versiones conforme avance el desarrollo de CultivaTech.
+
+---
+
+#### Frontend Web Application Deployment
+
+La **Frontend Web Application de CultivaTech** será desarrollada utilizando **Angular, TypeScript y Angular Material**, siguiendo los principios de Material Design definidos para la solución.
+
+El despliegue de la aplicación se realizará a partir del repositorio correspondiente en GitHub y contemplará la instalación de dependencias, ejecución de pruebas y generación de una versión optimizada para producción.
+
+El proceso de despliegue seguirá las siguientes actividades:
+
+1. El desarrollador implementa la funcionalidad correspondiente en una rama **feature**.
+2. Se crea un Pull Request hacia **develop**.
+3. El equipo realiza la revisión del código y valida los cambios.
+4. Se ejecutan las pruebas correspondientes para verificar el funcionamiento de la aplicación.
+5. Se crea una rama **release** cuando la versión se encuentra preparada para su publicación.
+6. La rama **release** es validada y posteriormente fusionada con **main**.
+7. Se instalan las dependencias del proyecto mediante **npm**.
+8. Se genera la versión de producción de la aplicación Angular.
+9. Los archivos generados son publicados en el servicio de alojamiento web o cloud seleccionado para el proyecto.
+10. Finalmente, se verifica el acceso y funcionamiento de la aplicación en el entorno de producción.
+
+El flujo general será:
+
+```text
+GitHub Repository
+       │
+       ▼
+feature/*
+       │
+       ▼
+develop
+       │
+       ▼
+release/vX.Y.Z
+       │
+       ▼
+main
+       │
+       ▼
+npm install
+       │
+       ▼
+Angular Production Build
+       │
+       ▼
+Cloud Hosting
+       │
+       ▼
+Published Frontend Application
+```
+
+Durante la validación del despliegue se verificará principalmente la carga correcta de las vistas, navegación entre funcionalidades, funcionamiento de los componentes de Angular Material y comunicación con los Web Services de CultivaTech.
+
+---
+
+#### RESTful Web Services Deployment
+
+Los **RESTful Web Services de CultivaTech** serán desarrollados utilizando **Java, Spring Boot y Spring Data JPA**, proporcionando los servicios necesarios para la comunicación entre la Frontend Web Application y los datos de la solución.
+
+El despliegue de los servicios será independiente del Frontend y partirá del repositorio correspondiente en GitHub.
+
+El proceso contemplará las siguientes actividades:
+
+1. El desarrollador implementa una nueva funcionalidad en una rama **feature**.
+2. Se crea un Pull Request hacia **develop**.
+3. El equipo realiza la revisión del código y verifica las convenciones establecidas.
+4. Se ejecutan las pruebas unitarias y de integración correspondientes.
+5. Una vez validada la versión, se crea una rama **release**.
+6. La rama **release** es fusionada con **main** después de las validaciones finales.
+7. Se configuran las variables y propiedades necesarias para el entorno de producción.
+8. Se ejecuta el proceso de construcción del proyecto Spring Boot.
+9. Se genera el artefacto correspondiente para su ejecución en el entorno de producción.
+10. El servicio es publicado en el servidor o servicio cloud seleccionado para la solución.
+11. Se verifica la disponibilidad de los endpoints REST y su correcta comunicación con la base de datos.
+12. Finalmente, se valida la documentación de los servicios mediante **OpenAPI / Swagger**.
+
+El flujo general será:
+
+```text
+GitHub Repository
+       │
+       ▼
+feature/*
+       │
+       ▼
+develop
+       │
+       ▼
+Unit / Integration Tests
+       │
+       ▼
+release/vX.Y.Z
+       │
+       ▼
+main
+       │
+       ▼
+Spring Boot Build
+       │
+       ▼
+Cloud / Server Environment
+       │
+       ▼
+RESTful Web Services
+```
+
+Durante la validación del despliegue se verificará:
+
+- Correcta compilación del proyecto.
+- Disponibilidad de los endpoints REST.
+- Correcta conexión con la base de datos.
+- Funcionamiento de las pruebas unitarias y de integración.
+- Correcta comunicación entre el Frontend y los Web Services.
+- Disponibilidad de la documentación OpenAPI mediante Swagger.
+- Correcta configuración de las variables necesarias para el entorno de producción.
+
+---
+
+#### Seguridad y disponibilidad
+
+El proceso de despliegue de CultivaTech considera diferentes medidas para mantener la estabilidad y seguridad de los productos publicados.
+
+Entre las principales medidas se encuentran:
+
+- Uso de la rama **main** únicamente para versiones estables.
+- Revisión de cambios mediante Pull Requests.
+- Aplicación de **GitFlow** para organizar el desarrollo y las liberaciones.
+- Uso de **Semantic Versioning** para identificar las versiones publicadas.
+- Ejecución de pruebas antes de realizar un despliegue.
+- Uso de **HTTPS** en los productos publicados que lo soporten.
+- Separación entre el código fuente y las configuraciones específicas del entorno de producción.
+- No almacenar credenciales, contraseñas o claves de acceso directamente en el repositorio.
+- Respaldo del código fuente mediante GitHub.
+
+Estas medidas permitirán reducir los riesgos asociados a la publicación de nuevas versiones y facilitar la identificación y corrección de posibles problemas durante el ciclo de vida de CultivaTech.
+
+---
+
+#### Configuración del entorno de producción
+
+La configuración del entorno de producción considera los principales productos tecnológicos que conforman la solución CultivaTech y las tecnologías utilizadas para su implementación.
+
+| **Producto** | **Tecnología** | **Plataforma de despliegue** |
+|---|---|---|
+| Landing Page | HTML5, CSS3, JavaScript | GitHub Pages |
+| Frontend Web Application | Angular + TypeScript + Angular Material | Servicio de alojamiento web / Cloud |
+| RESTful Web Services | Java + Spring Boot + Spring Data JPA | Servidor / Servicio Cloud |
+| Control de versiones | Git | GitHub |
+| Documentación de API | OpenAPI / Swagger | Integrada con los Web Services |
+
+La estrategia de despliegue definida permitirá mantener una publicación organizada y consistente de los componentes de CultivaTech. Además, la separación de los productos en diferentes repositorios permitirá desplegar y actualizar la Landing Page, la Frontend Web Application y los Web Services de manera independiente, facilitando el mantenimiento y evolución de la solución durante los siguientes Sprints.
