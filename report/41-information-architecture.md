@@ -1,6 +1,6 @@
 ## 4.2. Information Architecture.
 
-La arquitectura de información de TerraTech se ha definido con el propósito de organizar los contenidos y funcionalidades de la plataforma de manera clara, accesible y comprensible para los usuarios. La estructura propuesta busca facilitar la navegación y permitir que agricultores y administradores de cooperativas encuentren rápidamente la información necesaria para monitorear cultivos, consultar indicadores y gestionar los recursos disponibles en la plataforma.
+La arquitectura de información de CultivaTech se ha definido con el propósito de organizar los contenidos y funcionalidades de la plataforma de manera clara, accesible y comprensible para los usuarios. La estructura propuesta busca facilitar la navegación y permitir que agricultores y administradores de cooperativas encuentren rápidamente la información necesaria para monitorear cultivos, consultar indicadores y gestionar los recursos disponibles en la plataforma.
 
 ### 4.2.1. Organization Systems.
 
@@ -14,7 +14,7 @@ TerraTech organizará visualmente la información de acuerdo con su importancia 
 
 ### 4.2.2. Labeling Systems.
 
-TerraTech utilizará un sistema de etiquetas consistente que permita identificar fácilmente las funcionalidades, métricas y acciones disponibles. El lenguaje empleado buscará mantener un equilibrio entre los términos propios de la agricultura de precisión y expresiones comprensibles para los diferentes tipos de usuario.
+CultivaTech utilizará un sistema de etiquetas consistente que permita identificar fácilmente las funcionalidades, métricas y acciones disponibles. El lenguaje empleado buscará mantener un equilibrio entre los términos propios de la agricultura de precisión y expresiones comprensibles para los diferentes tipos de usuario.
 
 - ***Visitantes y nuevos usuarios:*** La Landing Page utilizará llamados a la acción fácilmente reconocibles, como "Solicitar Demo", acompañados de etiquetas claras en los formularios para solicitar únicamente la información necesaria, como nombre, datos de contacto y características generales del terreno.
 
@@ -23,18 +23,19 @@ TerraTech utilizará un sistema de etiquetas consistente que permita identificar
 - ***Administradores de Cooperativa:*** Los módulos orientados a la gestión utilizarán etiquetas relacionadas con el análisis consolidado de información, como "Reportes", "Dashboard Agregado", "Rendimiento promedio" y "Hectáreas totales". Asimismo, se utilizarán acciones como "Exportar PDF" para facilitar la generación y consulta de reportes.
 
 ### 4.2.3. SEO Tags and Meta Tags
-Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender y posicionar en los resultados. Los meta tags son etiquetas que proporcionan información sobre la página, como su descripción, palabras clave y autor, lo cual ayuda al ser buscado en el navegador. A continuación se presentan los SEO tags y meta tags que se utilizarán en la plataforma TerraTech:
+
+Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender y posicionar en los resultados. Los meta tags son etiquetas que proporcionan información sobre la página, como su descripción, palabras clave y autor, lo cual ayuda al ser buscado en el navegador. A continuación se presentan los SEO tags y meta tags que se utilizarán en la plataforma CultivaTech:
 
 ***Title Tag:*** Este tag define el título de la página y es uno de los factores más importantes para el SEO. Debe ser único y contener palabras clave relevantes.
 
 ```html
-<title>TerraTech - Monitoreo Inteligente y Agricultura de Precisión IoT</title>
+<title>CultivaTech - Monitoreo Inteligente y Agricultura de Precisión IoT</title>
 ```
 
 ***Meta Description:*** Este tag proporciona una breve descripción del contenido de la página. Permite a los usuarios entender de qué trata la página antes de hacer clic en el enlace. Debe ser conciso y atractivo.
 
 ```html
-<meta name="description" content="TerraTech es una plataforma de agricultura inteligente que optimiza el riego y la fertilización mediante sensores IoT en tiempo real, mapas de fertilidad y análisis predictivo para agricultores.">
+<meta name="description" content="CultivaTech es una plataforma de agricultura inteligente que optimiza el riego y la fertilización mediante sensores IoT en tiempo real, mapas de fertilidad y análisis predictivo para agricultores.">
 ```
 
 ***Language tag:*** Este tag indica el idioma principal del contenido de la página. Es importante para la accesibilidad y el SEO.
@@ -46,13 +47,13 @@ Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender
 ***Robots tag:*** Este tag indica a los motores de búsqueda cómo deben indexar la página. Puede ser utilizado para evitar que ciertas páginas sean indexadas (por ejemplo, el dashboard interno).
 
 ```html
- <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 ```
 
 ***Author tag:*** Este tag indica el autor del contenido de la página. Es útil para dar crédito a los creadores de contenido.
 
 ```html
-<meta name="author" content="NovaTech Agro Team">
+<meta name="author" content="GreenDream Team">
 ```
 
 ***Meta Viewport:*** Este tag es esencial para que la página sea responsiva en dispositivos móviles (vital para agricultores en el campo). Mejora la experiencia del usuario y es un factor importante para el SEO técnico.
@@ -61,10 +62,10 @@ Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-***Canonical Tag:*** Este tag especifica la URL canónica de la página para evitar problemas de contenido duplicado en motores de búsqueda. Ayuda a consolidar el posicionamiento de una sola versión de la página.***
+***Canonical Tag:*** Este tag especifica la URL canónica de la página para evitar problemas de contenido duplicado en motores de búsqueda. Ayuda a consolidar el posicionamiento de una sola versión de la página.
 
 ```html
-<link rel="canonical" href="https://www.terratech-agro.com/">
+<link rel="canonical" href="https://www.cultivatech.com/">
 ```
 
 ### 4.2.4. Searching Systems
@@ -87,5 +88,4 @@ Para encontrar ciertas funcionalidades de nuestra aplicación, usamos varios bot
 
 - ***Gestión de Dispositivos:*** Una sección dedicada donde el agricultor puede registrar nuevos sensores físicos a su cuenta y configurar los umbrales personalizados de alerta para cada métrica.
 
-- ***Mi perfil:***  Permite a los usuarios configurar sus preferencias personales, actualizar la información técnica de su finca o cooperativa, y cambiar su contraseña.
-
+- ***Mi perfil:*** Permite a los usuarios configurar sus preferencias personales, actualizar la información técnica de su finca o cooperativa, y cambiar su contraseña.
