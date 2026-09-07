@@ -49,6 +49,22 @@ La distribución permitió que los integrantes trabajaran de manera coordinada e
 
 ## 5.2.1.3. Sprint Backlog 1.
 
+
+El Sprint Backlog del Sprint 1 contiene las actividades definidas para desarrollar la primera versión de CultivaTech. Las tareas se enfocaron en la documentación del proyecto y en la construcción de la Landing Page, considerando los elementos necesarios para comunicar la propuesta de GreenDream.
+
+| User Story ID | User Story Title | Work-item / Task ID | Task Title | Description | Estimation (Hours) | Assigned to | Status |
+|---|---|---|---|---|---:|---|---|
+| **US01** | Presentación de CultivaTech | **Task 1** | Diseño de la estructura inicial de la Landing Page | Definir y organizar la estructura visual de la Landing Page de CultivaTech, considerando las secciones necesarias para presentar la solución. | 3 | Rosangela Silva Hualpa | Done |
+| **US01** | Presentación de CultivaTech | **Task 1.1** | Implementación de la sección principal | Implementar la sección principal de la Landing Page para presentar el nombre y propuesta de CultivaTech. | 2 | Maria Luisa Munayco Apolaya | Done |
+| **US02** | Información de la solución | **Task 2** | Implementación de las secciones informativas | Incorporar en la Landing Page la información relacionada con la propuesta de CultivaTech y su orientación al sector agrícola. | 3 | Jean Pierre Condor Sandoval | Done |
+| **US02** | Información de la solución | **Task 2.1** | Organización del contenido visual | Organizar los textos y elementos visuales de las secciones informativas para facilitar su lectura y comprensión. | 2 | Rosangela Silva Hualpa | Done |
+| **US03** | Navegación de la Landing Page | **Task 3** | Implementación de navegación | Incorporar los elementos necesarios para facilitar la navegación entre las secciones disponibles de la Landing Page. | 2 | Renzo Piero Santos Minaya | Done |
+| **US04** | Adaptabilidad de la Landing Page | **Task 4** | Ajuste responsive | Realizar ajustes en la presentación de la Landing Page para mantener una visualización adecuada en diferentes tamaños de pantalla. | 3 | Renzo Piero Santos Minaya | Done |
+| **US05** | Documentación del proyecto | **Task 5** | Organización de la documentación | Organizar y completar la documentación correspondiente al proyecto GreenDream y la propuesta de CultivaTech. | 4 | Jorge Manuel Retuerto Rodriguez | Done |
+| **US05** | Documentación del proyecto | **Task 5.1** | Revisión de documentación | Revisar la información documentada para mantener consistencia entre la propuesta de CultivaTech y la información presentada en la Landing Page. | 2 | Jorge Manuel Retuerto Rodriguez | Done |
+
+---
+
 ## 5.2.1.4. Development Evidence for Sprint Review.
 
 ## 5.2.1.5. Execution Evidence for Sprint Review.
