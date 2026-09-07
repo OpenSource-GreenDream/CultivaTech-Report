@@ -27,8 +27,25 @@ Durante el Sprint 1 se priorizó la construcción de una primera versión de la 
 
 ---
 
-
 ## 5.2.1.2. Aspect Leaders and Collaborators.
+
+Para el desarrollo del Sprint 1 se distribuyeron responsabilidades entre los integrantes del equipo, considerando las actividades relacionadas con la Landing Page y la documentación del proyecto. La siguiente matriz presenta a los responsables principales y colaboradores de cada aspecto.
+
+| Team member | Github username | Landing Page | Documentación | Diseño UI | Contenido de CultivaTech | Responsive Design |
+|---|---|---|---|---|---|---|
+| Jean Pierre Condor Sandoval | `jeanpcs` | C | C | - | C | C |
+| Jorge Manuel Retuerto Rodriguez | `Calin1407` | C | L | C | C | C |
+| Maria Luisa Munayco Apolaya | `malumunayco` | C | C | - | C | C |
+| Renzo Piero Santos Minaya | `RSSint` | C | C | - | C | C |
+| Rosangela Silva Hualpa |`amazcoffee2-spec`  | L | C | L | L | L |
+
+**Leyenda:**
+
+- **L:** Aspect Leader
+- **C:** Collaborator
+- **-:** No participa directamente en el aspecto
+
+La distribución permitió que los integrantes trabajaran de manera coordinada en las diferentes actividades del sprint, manteniendo responsables principales para cada aspecto.
 
 ## 5.2.1.3. Sprint Backlog 1.
 
