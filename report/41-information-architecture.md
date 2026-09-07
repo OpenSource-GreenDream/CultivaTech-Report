@@ -1,68 +1,74 @@
 ## 4.2. Information Architecture.
 
-La arquitectura de información de CultivaTech se ha definido con el propósito de organizar los contenidos y funcionalidades de la plataforma de manera clara, accesible y comprensible para los usuarios. La estructura propuesta busca facilitar la navegación y permitir que agricultores y administradores de cooperativas encuentren rápidamente la información necesaria para monitorear cultivos, consultar indicadores y gestionar los recursos disponibles en la plataforma.
+La arquitectura de información de CultivaTech se ha definido con el propósito de organizar los contenidos y funcionalidades de la plataforma de manera clara, accesible y comprensible para los usuarios. La estructura contempla tanto la Landing Page, orientada a presentar la solución y facilitar el acceso a la plataforma, como la Web Application, destinada al monitoreo y gestión de los cultivos. De esta manera, los visitantes podrán conocer la propuesta de CultivaTech, solicitar una demostración o iniciar sesión, mientras que los usuarios registrados podrán acceder a las funcionalidades de monitoreo y análisis disponibles en la aplicación.
 
 ### 4.2.1. Organization Systems.
 
-TerraTech organizará visualmente la información de acuerdo con su importancia y el contexto en el que se encuentre el usuario. Para ello, se aplicarán diferentes criterios de jerarquización y distribución de contenido dentro de la plataforma:
+CultivaTech organizará visualmente la información de acuerdo con su importancia y el contexto en el que se encuentre el usuario. Para ello, se aplicarán diferentes criterios de jerarquización y distribución de contenido tanto en la Landing Page como en la Web Application:
 
-- En el Dashboard de Monitoreo, los datos que requieren mayor atención tendrán prioridad visual. Las alertas críticas relacionadas con el riego, así como los indicadores de humedad y nutrientes N-P-K, serán mostrados en posiciones destacadas mediante tamaños, colores y elementos visuales que permitan reconocer rápidamente el estado del cultivo. En la Landing Page se seguirá un criterio similar, comenzando por la propuesta de valor de TerraTech y continuando progresivamente con sus características y beneficios.
+- En la Landing Page, la información seguirá una organización jerárquica y secuencial. Se iniciará con el Hero Section, donde se presentará el nombre de CultivaTech, su propuesta de valor, una descripción breve y el botón "Solicitar Demo". Posteriormente, se mostrarán las características principales de la solución, información sobre el proyecto y el equipo de desarrollo. Asimismo, se dispondrá de la opción "Iniciar Sesión" para permitir el acceso a la Web Application.
 
-- En aquellos procesos que requieren el ingreso de información, como el registro de usuarios, la incorporación de un nuevo sensor IoT o la solicitud de una demostración, los formularios se organizarán de manera secuencial. De esta forma, el usuario podrá completar cada proceso mediante pasos claramente diferenciados, reduciendo errores y evitando presentar demasiada información al mismo tiempo.
+- En el Dashboard de Monitoreo de la Web Application, los datos que requieren mayor atención tendrán prioridad visual. Los indicadores relacionados con las condiciones del cultivo y las alertas generadas por el sistema serán mostrados en posiciones destacadas mediante tamaños, colores y elementos visuales que permitan reconocer rápidamente el estado del cultivo.
 
-- Para la interpretación de información geográfica y comparativa, TerraTech empleará estructuras visuales que permitan relacionar diferentes variables. En el Mapa de Calor de Fertilidad, por ejemplo, se representarán las diferentes zonas del terreno utilizando colores asociados al estado del suelo. Asimismo, en los módulos destinados a cooperativas se podrá organizar información de diferentes socios o lotes mediante tablas que permitan comparar indicadores de rendimiento, humedad y alertas.
+- En aquellos procesos que requieren el ingreso de información, como el registro de usuarios, el inicio de sesión, la incorporación de un nuevo sensor IoT o la solicitud de una demostración, los formularios se organizarán de manera clara y secuencial. De esta forma, el usuario podrá completar cada proceso reduciendo errores y evitando presentar demasiada información al mismo tiempo.
+
+- Para la interpretación de información histórica y geográfica, CultivaTech empleará estructuras visuales que permitan relacionar diferentes variables. Los datos recopilados podrán presentarse mediante gráficos, indicadores y representaciones del terreno que faciliten la identificación de cambios y tendencias en las condiciones del cultivo.
 
 ### 4.2.2. Labeling Systems.
 
-CultivaTech utilizará un sistema de etiquetas consistente que permita identificar fácilmente las funcionalidades, métricas y acciones disponibles. El lenguaje empleado buscará mantener un equilibrio entre los términos propios de la agricultura de precisión y expresiones comprensibles para los diferentes tipos de usuario.
+CultivaTech utilizará un sistema de etiquetas consistente que permita identificar fácilmente las secciones, funcionalidades, métricas y acciones disponibles. El lenguaje empleado buscará mantener un equilibrio entre los términos relacionados con la agricultura y expresiones comprensibles para los diferentes tipos de usuario.
 
-- ***Visitantes y nuevos usuarios:*** La Landing Page utilizará llamados a la acción fácilmente reconocibles, como "Solicitar Demo", acompañados de etiquetas claras en los formularios para solicitar únicamente la información necesaria, como nombre, datos de contacto y características generales del terreno.
+- ***Visitantes y nuevos usuarios:*** La Landing Page utilizará etiquetas de navegación como "Inicio", "Características", "Sobre el Proyecto", "Equipo", "Solicitar Demo" e "Iniciar Sesión". El botón "Solicitar Demo" permitirá acceder al formulario correspondiente, mientras que "Iniciar Sesión" permitirá a los usuarios registrados acceder a la Web Application.
 
-- ***Agricultores:*** Los indicadores relacionados con el monitoreo utilizarán nombres y unidades que permitan interpretar rápidamente los datos, como "Humedad (%)", "Nutrientes (N-P-K ppm)" y "Temperatura (°C)". Las acciones principales se identificarán mediante etiquetas como "Agregar Sensor", "Ver historial" o "Ver recomendaciones". Las alertas mostrarán mensajes breves y orientados a una acción específica.
+- ***Formulario de solicitud de demo:*** Los campos utilizarán etiquetas claras para identificar la información requerida. En caso de que un campo obligatorio no sea completado, se mostrará un mensaje de validación. Cuando el formulario sea enviado correctamente, se mostrará un mensaje de confirmación.
 
-- ***Administradores de Cooperativa:*** Los módulos orientados a la gestión utilizarán etiquetas relacionadas con el análisis consolidado de información, como "Reportes", "Dashboard Agregado", "Rendimiento promedio" y "Hectáreas totales". Asimismo, se utilizarán acciones como "Exportar PDF" para facilitar la generación y consulta de reportes.
+- ***Agricultores:*** Los indicadores relacionados con el monitoreo utilizarán nombres y unidades que permitan interpretar rápidamente los datos, como "Humedad (%)", "Nutrientes (N-P-K ppm)" y "Temperatura (°C)". Las acciones principales se identificarán mediante etiquetas como "Agregar Sensor", "Ver historial" o "Ver recomendaciones".
+
+- ***Administradores de Cooperativa:*** Los módulos orientados a la gestión utilizarán etiquetas relacionadas con el análisis consolidado de información, como "Reportes", "Dashboard Agregado", "Rendimiento promedio" y "Hectáreas totales".
+
+- ***Información legal:*** Se utilizará la etiqueta "Términos y Condiciones" para permitir que el visitante pueda acceder fácilmente a las condiciones de uso de CultivaTech.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender y posicionar en los resultados. Los meta tags son etiquetas que proporcionan información sobre la página, como su descripción, palabras clave y autor, lo cual ayuda al ser buscado en el navegador. A continuación se presentan los SEO tags y meta tags que se utilizarán en la plataforma CultivaTech:
+Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a comprender e identificar el contenido de una página. Por otro lado, los meta tags proporcionan información como la descripción, idioma y autor. En CultivaTech, estos elementos estarán orientados principalmente a la Landing Page, debido a que corresponde al contenido público de la plataforma.
 
-***Title Tag:*** Este tag define el título de la página y es uno de los factores más importantes para el SEO. Debe ser único y contener palabras clave relevantes.
-
-```html
-<title>CultivaTech - Monitoreo Inteligente y Agricultura de Precisión IoT</title>
-```
-
-***Meta Description:*** Este tag proporciona una breve descripción del contenido de la página. Permite a los usuarios entender de qué trata la página antes de hacer clic en el enlace. Debe ser conciso y atractivo.
+***Title Tag:*** Este tag define el título de la página y permite identificar el contenido principal de CultivaTech en los motores de búsqueda.
 
 ```html
-<meta name="description" content="CultivaTech es una plataforma de agricultura inteligente que optimiza el riego y la fertilización mediante sensores IoT en tiempo real, mapas de fertilidad y análisis predictivo para agricultores.">
+<title>CultivaTech - Monitoreo Inteligente de Cultivos con IoT</title>
 ```
 
-***Language tag:*** Este tag indica el idioma principal del contenido de la página. Es importante para la accesibilidad y el SEO.
+***Meta Description:*** Proporciona una descripción breve del contenido y propuesta de valor de CultivaTech.
+
+```html
+<meta name="description" content="CultivaTech es una solución tecnológica de GreenDream que utiliza dispositivos IoT y análisis de datos para apoyar el monitoreo y gestión de tierras de cultivo.">
+```
+
+***Language Tag:*** Indica el idioma principal utilizado en la página.
 
 ```html
 <meta http-equiv="Content-Language" content="es-PE">
 ```
 
-***Robots tag:*** Este tag indica a los motores de búsqueda cómo deben indexar la página. Puede ser utilizado para evitar que ciertas páginas sean indexadas (por ejemplo, el dashboard interno).
+***Robots Tag:*** Indica a los motores de búsqueda que la Landing Page puede ser indexada.
 
 ```html
 <meta name="robots" content="index, follow">
 ```
 
-***Author tag:*** Este tag indica el autor del contenido de la página. Es útil para dar crédito a los creadores de contenido.
+***Author Tag:*** Identifica al equipo responsable del contenido y desarrollo de la plataforma.
 
 ```html
 <meta name="author" content="GreenDream Team">
 ```
 
-***Meta Viewport:*** Este tag es esencial para que la página sea responsiva en dispositivos móviles (vital para agricultores en el campo). Mejora la experiencia del usuario y es un factor importante para el SEO técnico.
+***Meta Viewport:*** Permite que la interfaz se adapte correctamente a diferentes tamaños de pantalla y dispositivos.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-***Canonical Tag:*** Este tag especifica la URL canónica de la página para evitar problemas de contenido duplicado en motores de búsqueda. Ayuda a consolidar el posicionamiento de una sola versión de la página.
+***Canonical Tag:*** Especifica la URL principal de la Landing Page para evitar problemas relacionados con contenido duplicado.
 
 ```html
 <link rel="canonical" href="https://www.cultivatech.com/">
@@ -70,22 +76,54 @@ Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a entender
 
 ### 4.2.4. Searching Systems
 
-Para encontrar ciertas funcionalidades de nuestra aplicación, usamos varios botones y empleamos varios indicadores visuales para que el usuario sepa dónde encontrar lo que necesita. A continuación se muestran los ejemplos de los tipos de búsqueda que usaremos:
+CultivaTech utilizará diferentes mecanismos de navegación, búsqueda y filtrado para facilitar que los usuarios encuentren la información que necesitan tanto en la Landing Page como en la Web Application.
 
-- ***Búsqueda de zonas y sensores:*** Para facilitar el monitoreo en fincas grandes, usamos una serie de filtros y un selector desplegable para que el agricultor pueda hallar exactamente la zona de cultivo o el sensor individual (ID) del cual desea ver los datos en tiempo real.
+- ***Navegación en la Landing Page:*** Debido a que la información estará distribuida en secciones claramente identificadas, el visitante podrá utilizar el menú principal para acceder rápidamente a "Inicio", "Características", "Sobre el Proyecto" y "Equipo".
 
-- ***Búsqueda en histórico de datos:*** Usamos filtros por rango de fechas y tipo de métrica (Humedad, Nitrógeno, Fósforo, Potasio o Temperatura) para que el agricultor pueda graficar las tendencias de los últimos días y detectar patrones en su suelo.
+- ***Acceso a Solicitar Demo:*** El botón "Solicitar Demo" permitirá dirigir al visitante hacia el formulario correspondiente para realizar una solicitud de demostración.
 
-- ***Búsqueda de socios y reportes:*** Para los administradores de la cooperativa, se les da una forma de buscar rápidamente el rendimiento por socio o por lote específico, permitiéndoles acceder ágilmente al dashboard consolidado y a la exportación de reportes en PDF.
+- ***Acceso a la Web Application:*** La opción "Iniciar Sesión" permitirá que los usuarios registrados accedan desde la Landing Page a la pantalla de autenticación de la Web Application.
+
+- ***Búsqueda de zonas y sensores:*** Dentro de la Web Application se utilizarán filtros y selectores para que el agricultor pueda identificar una zona de cultivo o un sensor específico y consultar la información correspondiente.
+
+- ***Búsqueda en el historial de datos:*** Se utilizarán filtros por rango de fechas y tipo de métrica, como humedad, nutrientes o temperatura, para consultar la evolución de los datos recopilados.
+
+- ***Búsqueda de socios y reportes:*** Los administradores de cooperativas podrán localizar información correspondiente a socios o lotes específicos y acceder a los datos consolidados disponibles en la plataforma.
 
 ### 4.2.5. Navigation Systems
 
-- ***Registro e Inicio de Sesión:*** Para poder entrar, el usuario ingresará sus credenciales y el sistema registrará qué tipo de usuario es: Agricultor, que busca monitorear sus sembríos y recibir recomendaciones de riego/fertilización, o Administrador de Cooperativa, que requiere visualizar métricas globales y reportes de todos los socios.
+El sistema de navegación de CultivaTech permitirá que los usuarios se desplacen fácilmente entre los contenidos de la Landing Page y las funcionalidades disponibles en la Web Application.
 
-- ***Dashboard de Monitoreo:*** Permite a los usuarios visualizar los indicadores clave del suelo en tiempo real, ver el pronóstico del clima integrado y acceder rápidamente a las notificaciones y recomendaciones predictivas del sistema.
+***Landing Page***
 
-- ***Mapas y Análisis:*** Permite a los agricultores navegar de forma interactiva (zoom y desplazamiento) sobre el mapa de calor de fertilidad de su terreno y visualizar imágenes satelitales recientes para identificar áreas críticas.
+- ***Hero Section:*** Presentará el nombre de CultivaTech, un título principal, una descripción breve de la solución y el botón "Solicitar Demo".
 
-- ***Gestión de Dispositivos:*** Una sección dedicada donde el agricultor puede registrar nuevos sensores físicos a su cuenta y configurar los umbrales personalizados de alerta para cada métrica.
+- ***Características:*** Permitirá al visitante conocer las principales funcionalidades de CultivaTech mediante títulos y descripciones breves.
 
-- ***Mi perfil:*** Permite a los usuarios configurar sus preferencias personales, actualizar la información técnica de su finca o cooperativa, y cambiar su contraseña.
+- ***Sobre el Proyecto:*** Presentará información relacionada con el propósito y objetivo de CultivaTech.
+
+- ***Equipo:*** Permitirá conocer los nombres y roles de los integrantes responsables del desarrollo del proyecto.
+
+- ***Solicitar Demo:*** Permitirá acceder al formulario de solicitud de demostración. El sistema validará los campos obligatorios y mostrará un mensaje de confirmación cuando la solicitud sea enviada correctamente.
+
+- ***Iniciar Sesión:*** Permitirá a los usuarios registrados dirigirse desde la Landing Page hacia la pantalla de autenticación de la Web Application.
+
+- ***Términos y Condiciones:*** Permitirá al visitante acceder y visualizar las condiciones de uso de CultivaTech.
+
+***Web Application***
+
+- ***Registro e Inicio de Sesión:*** Permitirá al usuario registrarse o ingresar mediante sus credenciales para acceder a las funcionalidades disponibles en CultivaTech.
+
+- ***Dashboard de Monitoreo:*** Permitirá visualizar los principales indicadores obtenidos mediante los dispositivos IoT y conocer el estado general de los cultivos.
+
+- ***Monitoreo de Cultivos:*** Permitirá consultar los indicadores relacionados con las condiciones de las tierras de cultivo y visualizar los datos recopilados por los dispositivos IoT.
+
+- ***Historial y Análisis:*** Permitirá consultar la evolución de los indicadores mediante gráficos, filtros y rangos de fechas para facilitar el análisis de la información.
+
+- ***Mapas y Análisis:*** Permitirá visualizar gráficamente las diferentes zonas del terreno y consultar información relacionada con sus condiciones.
+
+- ***Gestión de Dispositivos:*** Permitirá registrar y administrar los dispositivos IoT asociados a las tierras de cultivo.
+
+- ***Recomendaciones:*** Permitirá consultar información generada a partir del análisis de los datos recopilados y del historial de los cultivos.
+
+- ***Mi Perfil:*** Permitirá al usuario consultar y actualizar la información relacionada con su cuenta y sus preferencias.
