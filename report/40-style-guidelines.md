@@ -20,7 +20,7 @@ La integración de estos elementos permite comunicar visualmente el compromiso d
 
 <img src="assets/chapter-04/cultivatech.png" alt="CultivaTech branding" style="width: 200px; height: 200px;">
 
-**Typography**
+**Typography**  
 
 Para el diseño tipográfico de CultivaTech se selecciona una combinación de fuentes orientada a mantener una interfaz moderna, clara y funcional. La tipografía debe facilitar la lectura de información tanto en computadoras como en dispositivos móviles, considerando que los usuarios pueden utilizar la plataforma directamente durante sus actividades agrícolas.
 
