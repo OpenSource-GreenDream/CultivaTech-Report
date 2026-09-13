@@ -33,5 +33,18 @@ La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que re
 * **Clientes Finales:** Su interacción es altamente puntual pero crítica en el punto de venta, centrada en la verificación de trazabilidad, el origen del producto y los reportes de sostenibilidad.
 
 ### 2.3.3. User Journey Mapping.
+A continuación, se presenta el User Journey Mapping (Mapa de Experiencia del Usuario) que describe las etapas clave del recorrido de cada segmento objetivo frente a la solución, incluyendo los puntos de contacto, emociones y oportunidades de mejora.
+
+* **Segmento 1: Agricultor**
+  El siguiente Journey Map ilustra el proceso que sigue Marcelino, un agricultor de Huánuco, para monitorear el estado de su cultivo de zanahoria y decidir cuándo regar o fertilizar. El recorrido muestra cómo Marcelino depende de métodos tradicionales (inspección visual, experiencia personal) y enfrenta incertidumbre por la falta de datos precisos, especialmente ante cambios climáticos inesperados.
+    <img src="assets/chapter-02/user-journey-map-agricultor.png" alt="User Journey Mapping Agricultor" width="100%">
+
+* **Segmento 2: Proveedor**
+  El siguiente Journey Map muestra el proceso de Karim, un asesor técnico de Cañete, para recomendar insumos a los agricultores. El recorrido evidencia cómo Karim realiza visitas presenciales y se basa en su experiencia, pero carece de datos reales del suelo para hacer recomendaciones precisas, lo que genera errores, pérdida de confianza y reclamos de los agricultores.
+<img src="assets/chapter-02/user-journey-map-proveedor.png" alt="User Journey Mapping Proveedor" width="100%">
+
+* **Segmento 3: Cliente Final**
+  El siguiente Journey Map describe el proceso de Camila, una consumidora de Lima, para verificar la trazabilidad y sostenibilidad de los productos que compra en el supermercado. El recorrido muestra cómo Camila se enfrenta a información limitada y confusa sobre el origen de los productos, lo que genera desconfianza y frustración al momento de tomar decisiones de compra.
+    <img src="assets/chapter-02/user-journey-map-cliente.png" alt="User Journey Mapping Cliente" width="100%">
 
 ### 2.3.4. Empathy Mapping.
