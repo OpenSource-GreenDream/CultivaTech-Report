@@ -48,3 +48,17 @@ A continuación, se presenta el User Journey Mapping (Mapa de Experiencia del Us
     <img src="assets/chapter-02/user-journey-map-cliente.png" alt="User Journey Mapping Cliente" width="100%">
 
 ### 2.3.4. Empathy Mapping.
+El Mapa de Empatía sintetiza las observaciones e impresiones recopiladas durante las entrevistas, permitiendo profundizar en los aspectos emocionales y actitudinales de los tres segmentos de usuario objetivo de CultivaTech.
+
+#### Empathy Map 1: Don Marcelino Encarnación (Agricultor Tradicional)
+El siguiente Mapa de Empatía profundiza en la experiencia de Marcelino, el agricultor de Huánuco. Se identifican sus principales pensamientos y sentimientos (incertidumbre ante el clima, preocupación por la pérdida de cosechas), lo que ve en su entorno (campos extensos, cambios climáticos), lo que oye de otros agricultores (consejos tradicionales, temor a la tecnología), lo que dice y hace (inspección manual, decisión por intuición), así como sus principales pains (falta de información precisa, esfuerzo físico) y gains (deseo de certidumbre, mejora de la productividad).
+<img src="assets/chapter-02/empathy-map-agricultor.png" alt="Empathy Map Agricultor" width="100%">
+
+#### Empathy Map 2: Karim Castillo (Proveedor de Insumos)
+El siguiente Mapa de Empatía analiza la experiencia de Karim, el asesor técnico. Se exploran sus pensamientos y sentimientos (frustración por recomendaciones erróneas, necesidad de credibilidad), lo que ve (agricultores con problemas de suelo, competencia), lo que oye (reclamos de agricultores, feedback de otros asesores), lo que dice y hace (visitas a campo, recomendaciones basadas en experiencia), y sus pains (falta de datos precisos, pérdida de clientes) y gains (deseo de fidelizar clientes, incrementar ventas con recomendaciones acertadas).
+<img src="assets/chapter-02/empathy-map-proveedor.png" alt="Empathy Map Proveedor" width="100%">
+
+#### Empathy Map 3: Camila Vega (Consumidora Final)
+El siguiente Mapa de Empatía se centra en la experiencia de Camila, la consumidora final. Se identifican sus pensamientos y sentimientos (deseo de transparencia, desconfianza por falta de información), lo que ve (etiquetas confusas, productos de origen desconocido), lo que oye (tendencias de alimentación saludable, testimonios de otros compradores), lo que dice y hace (búsqueda en Google, decisión por precio y apariencia), y sus pains (dificultad para verificar origen, falta de confianza) y gains (deseo de productos saludables, disposición a pagar premium por trazabilidad).
+<img src="assets/chapter-02/empathy-map-cliente.png" alt="Empathy Map Cliente" width="100%">
+
