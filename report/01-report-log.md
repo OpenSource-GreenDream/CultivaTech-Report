@@ -7,3 +7,5 @@
 | 0.1.0   | 03/08/2026 | Retuerto Rodriguez, Jorge Manuel | Lean Ux Proccess y cierre de Chapter 1                |
 | 0.1.1   | 06/08/2026 | Condor Sandoval, Jean Pierre     | User Stories                                          |
 | 0.2.0   | 07/08/2026 | Condor Sandoval, Jean Pierre     | Impact Mapping, Product Backlog y cierre de Chapter 3 |
+| 0.3.0   | 08/08/2026 | Silva Hualpa, Rosangela Karen    | Style guidelines y desarrollo de Mockups de web       |
+| 0.4.0   | 18/08/2026 | Santos Minaya, Renzo Peiro       | Analisis de competidores, Needfinding y big picture   |
