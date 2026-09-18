@@ -9,15 +9,14 @@ Para llevar a cabo el desarrollo de CultivaTech, GreenDream ha establecido un co
 La selección del entorno de trabajo se realizó considerando las tecnologías definidas para la solución y procurando que los integrantes puedan mantener una forma de trabajo consistente durante las distintas etapas del proyecto. A continuación, se detallan las herramientas seleccionadas para cada actividad:
 
 | **Categoría** | **Herramienta** | **Uso en CultivaTech** | **Ruta de acceso / descarga** | 
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 | Gestión del proyecto | Trello | Organización del Product Backlog, asignación de actividades y seguimiento del avance de los Sprints. | [https://trello.com/](https://trello.com/) |
 | Diseño de interfaces | Figma | Creación de wireframes, mockups y prototipos de las interfaces de CultivaTech. | [https://www.figma.com/](https://www.figma.com/) |
 | Investigación de usuarios | UXPressia | Construcción de User Personas, Empathy Maps, Journey Maps e Impact Maps. | [https://uxpressia.com/](https://uxpressia.com/) |
-| Diagramación | Lucidchart | Elaboración de diagramas relacionados con los flujos y modelos del sistema. | [https://www.lucidchart.com/](https://www.lucidchart.com/) |
-| Desarrollo de Landing Page | Visual Studio Code | Edición y desarrollo de la Landing Page mediante HTML5, CSS3 y JavaScript. | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| Diagramación | PlantUML | Elaboración de diagramas relacionados con los flujos y modelos del sistema. | [https://www.plantuml.com/](https://www.plantuml.com/) |
+| Desarrollo de Landing Page | vsCoder / JetBrains | Edición y desarrollo de la Landing Page mediante HTML5, CSS3 y JavaScript. | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
 | Desarrollo Frontend | Angular | Implementación de la aplicación web de CultivaTech y sus funcionalidades de interacción con el usuario. | [https://angular.io/](https://angular.io/) |
 | Componentes de interfaz | Angular Material | Implementación de componentes de interfaz para la aplicación web de CultivaTech. | [https://material.angular.io/](https://material.angular.io/) |
-| Desarrollo de Web Services | IntelliJ IDEA | Entorno utilizado para desarrollar los servicios RESTful con Java y Spring Boot. | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
 | Framework Backend | Spring Boot | Construcción de los Web Services que proporcionarán las funcionalidades y datos requeridos por las aplicaciones. | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
 | Persistencia de datos | Spring Data JPA | Gestión de la persistencia y comunicación entre los servicios backend y la base de datos. | [https://spring.io/projects/spring-data-jpa](https://spring.io/projects/spring-data-jpa) |
 | Gestión de paquetes | npm | Instalación y administración de las dependencias utilizadas por los proyectos frontend. | [https://www.npmjs.com/](https://www.npmjs.com/) |
@@ -46,19 +45,19 @@ La gestión del codigo fuente de CultivaTech se realizará utilizando Git como s
 A continuación, se presentan los usuarios de GitHub de los integrantes del equipo: 
 
 | **Integrante** | **Usuario GitHub** |
-|---|---|
+| :--- | :--- |
 | Jean Pierre Condor Sandoval | `jeanpcs` |
 | Jorge Manuel Retuerto Rodriguez | `Calin1407` |
 | Maria Luisa Munayco Apolaya | `malumunayco` |
 | Renzo Piero Santos Minaya | `RSSint` |
 | Rongela Karen Silva Hualpa | `amazcoffee2-spec` |
 
-#### Repositorios del proyecto 
+- **Repositorios del proyecto** 
 
 Los productos que forman parte de la solución CultivaTech serán gestionados mediante repositorios en GitHub. Cada producto contará contará con un repositorio destinado a mantener su código fuente y los recursos necesarios para su desarrollo.
 
 | **Producto** | **Repositorio** |
-|---|---|
+| :--- | :--- |
 | Informe | [Repositorio-Informe](https://github.com/OpenSource-GreenDream/CultivaTech-Report)|
 | Landing Page | [Repositorio-Landing-Page]() |
 | Frontend Web Application | [Repositorio-Frontend-Web-Application]() |
@@ -66,7 +65,7 @@ Los productos que forman parte de la solución CultivaTech serán gestionados me
 
 El repositorio correspondiente a los **Web Services** incluirá tanto el proyecto desarrollado con Spring Boot como los archivos asociados a las pruebas unitarias y de integración/aceptación, permitiendo verificar el correcto funcionamiento de los servicios implementados.
 
-#### GitFlow WorkFlow 
+- **GitFlow WorkFlow** 
 
 Para organizar el desarrollo de CultivaTech, el equipo utilizará **GitFlow** como workflow de control de versiones. Este modelo permitirá separar el desarrollo de nuevas funcionalidades de las versiones estables del producto, facilitando la integración y revisión de los cambios realizados por los integrantes. 
 
@@ -86,7 +85,7 @@ Cada nueva funcionalidad será desarrollada mediante una rama `feature` independ
 
 La convención utilizada será:
 
-```text
+```
 feature/<feature-name>
 ```
 
@@ -94,7 +93,7 @@ El nombre de la funcionalidad se escribirá en inglés, utilizando palabras desc
 
 Algunos ejemplos relacionados con CultivaTech son:
 
-```text
+```
 feature/soil-monitoring
 feature/crop-dashboard
 feature/user-authentication
@@ -109,13 +108,13 @@ Las ramas `release` serán utilizadas cuando el equipo prepare una nueva versió
 
 La convención utilizada será:
 
-```text
+```
 release/vX.Y.Z
 ```
 
 Por ejemplo:
 
-```text
+```
 release/v1.0.0
 release/v1.1.0
 release/v1.2.0
@@ -123,7 +122,7 @@ release/v1.2.0
 
 El nombre de las versiones seguirá el estándar **Semantic Versioning (SemVer)**, utilizando el formato:
 
-```text
+```
 MAJOR.MINOR.PATCH
 ```
 
@@ -139,13 +138,13 @@ Las ramas `hotfix` serán utilizadas para corregir errores críticos encontrados
 
 La convención utilizada será:
 
-```text
+```
 hotfix/<bug-name>
 ```
 
 Por ejemplo:
 
-```text
+```
 hotfix/soil-data-error
 hotfix/login-validation
 hotfix/api-response-error
@@ -153,14 +152,14 @@ hotfix/api-response-error
 
 Después de solucionar y validar el error, los cambios serán integrados tanto en `main` como en `develop`, evitando que la corrección se pierda en futuras versiones.
 
-#### Conventional Commits
+- **Conventional Commits**
 
 Para mantener un historial de cambios claro y uniforme, el equipo utilizará **Conventional Commits** para definir los mensajes de los commits realizados durante el desarrollo.
 
 Los principales tipos de commit serán:
 
 | **Prefijo** | **Descripción** |
-|---|---|
+| :--- | :--- |
 | `feat` | Implementación de una nueva funcionalidad. |
 | `fix` | Corrección de un error. |
 | `docs` | Cambios relacionados con la documentación. |
@@ -172,13 +171,13 @@ Los principales tipos de commit serán:
 
 Los mensajes seguirán la estructura:
 
-```text
+```
 <type>(<scope>): <description>
 ```
 
 Por ejemplo:
 
-```text
+```
 feat(frontend): add soil monitoring dashboard
 feat(api): add soil data endpoint
 fix(frontend): correct crop dashboard layout
@@ -190,13 +189,11 @@ De esta manera, la utilización de Git, GitHub, GitFlow, Semantic Versioning y C
 
 ## 5.1.3. Source Code Style Guide & Conventions.
 
-### 5.1.3. Source Code Style Guide & Conventions
-
 Con el propósito de mantener un código fuente ordenado, legible y consistente, el equipo de GreenDream establecerá un conjunto de convenciones para el desarrollo de CultivaTech. Estas reglas serán aplicadas por todos los integrantes durante la implementación de la Landing Page, la Frontend Web Application y los Web Services.
 
 Para todos los lenguajes utilizados en la solución se empleará **nomenclatura en inglés**, incluyendo nombres de variables, funciones, clases, interfaces, componentes, archivos, métodos y otros elementos del código. Además, se tomarán como referencia las guías de estilo indicadas en el enunciado del proyecto.
 
-#### Convenciones generales
+**Convenciones generales**
 
 Durante el desarrollo de CultivaTech se aplicarán las siguientes reglas:
 
@@ -209,7 +206,7 @@ Durante el desarrollo de CultivaTech se aplicarán las siguientes reglas:
 - Los comentarios se utilizarán únicamente cuando sean necesarios para explicar lógica que no resulte evidente a partir del código.
 - Se evitará mantener código duplicado o innecesario.
 
-#### Convenciones para HTML
+- **Convenciones para HTML**
 
 Para la estructura de la Landing Page y las interfaces web se seguirán las recomendaciones de **HTML Style Guide and Coding Conventions** y **Google HTML/CSS Style Guide**.
 
@@ -224,14 +221,14 @@ Las principales convenciones serán:
 
 Ejemplo:
 
-```html
+```
 <section class="soil-monitoring">
     <h2>Soil Monitoring</h2>
     <p>Monitor the conditions of the crop soil.</p>
 </section>
 ```
 
-#### Convenciones para CSS
+- **Convenciones para CSS**
 
 Para la definición de estilos se tomarán como referencia **Google HTML/CSS Style Guide** y las convenciones establecidas para CSS.
 
@@ -246,14 +243,14 @@ Las principales reglas serán:
 
 Ejemplos:
 
-```text
+```
 soil-monitoring
 crop-dashboard
 weather-card
 user-profile
 ```
 
-#### Convenciones para JavaScript
+- **Convenciones para JavaScript**
 
 Para el código JavaScript utilizado en la Landing Page se seguirán las recomendaciones de las guías de estilo de JavaScript y las convenciones establecidas por el equipo.
 
@@ -269,13 +266,13 @@ Se aplicarán las siguientes reglas:
 
 Ejemplo:
 
-```javascript
+```
 const getSoilData = async () => {
     // Implementation
 };
 ```
 
-#### Convenciones para TypeScript
+- **Convenciones para TypeScript**
 
 Para el desarrollo de la Frontend Web Application con Angular se adoptarán las recomendaciones de **Angular Coding Style Guide** y **Google TypeScript Style Guide**.
 
@@ -291,7 +288,7 @@ Las principales convenciones serán:
 
 Ejemplo:
 
-```typescript
+```
 export interface SoilData {
     humidity: number;
     ph: number;
@@ -307,7 +304,7 @@ export class SoilMonitoringService {
 
 Para los componentes de Angular se utilizará una nomenclatura consistente, por ejemplo:
 
-```text
+```
 SoilMonitoringComponent
 CropDashboardComponent
 WeatherCardComponent
@@ -315,13 +312,13 @@ WeatherCardComponent
 
 Mientras que los archivos utilizarán nombres descriptivos en `kebab-case`, por ejemplo:
 
-```text
+```
 soil-monitoring.component.ts
 crop-dashboard.component.ts
 weather-card.component.ts
 ```
 
-#### Convenciones para Java
+- **Convenciones para Java**
 
 Para el desarrollo de los Web Services con Spring Boot se seguirá como referencia **Google Java Style Guide**, junto con las convenciones recomendadas para proyectos desarrollados con Spring Boot.
 
@@ -338,7 +335,7 @@ Las principales reglas serán:
 
 Ejemplo:
 
-```java
+```
 public interface SoilDataService {
     SoilData getSoilData(Long id);
 }
@@ -354,14 +351,14 @@ public class SoilDataServiceImpl implements SoilDataService {
 
 Para las clases relacionadas con Spring Boot se utilizarán nombres descriptivos según su responsabilidad, por ejemplo:
 
-```text
+```
 SoilDataController
 SoilDataService
 SoilDataRepository
 SoilData
 ```
 
-#### Convenciones para Gherkin
+- **Convenciones para Gherkin**
 
 Para la definición de especificaciones y pruebas de aceptación se tomarán como referencia las **Gherkin Conventions for Readable Specifications**.
 
@@ -369,7 +366,7 @@ Las especificaciones utilizarán las palabras clave de Gherkin para describir el
 
 Se utilizará la estructura:
 
-```gherkin
+```
 Feature: Soil monitoring
 
   Scenario: View soil conditions
@@ -381,10 +378,10 @@ Feature: Soil monitoring
 
 Los escenarios estarán escritos de manera clara y orientada al comportamiento esperado del sistema, evitando describir detalles innecesarios de implementación.
 
-#### Convenciones de nomenclatura
+- **Convenciones de nomenclatura**
 
 | **Elemento** | **Convención** | **Ejemplo** |
-|---|---|---|
+| :--- | :--- | :--- |
 | Variables | `camelCase` | `soilHumidity` |
 | Funciones | `camelCase` | `getSoilData()` |
 | Métodos Java | `camelCase` | `calculateFertility()` |
@@ -396,7 +393,7 @@ Los escenarios estarán escritos de manera clara y orientada al comportamiento e
 | Constantes | `UPPER_SNAKE_CASE` | `MAX_SOIL_HUMIDITY` |
 | Endpoints REST | `kebab-case` | `/api/soil-data` |
 
-#### Referencias de estilo
+- **Referencias de estilo**
 
 Las convenciones adoptadas para CultivaTech se basan en las siguientes referencias establecidas para el desarrollo de la solución:
 
@@ -417,7 +414,7 @@ Con el propósito de garantizar un proceso de despliegue organizado, reproducibl
 
 El proceso de despliegue contempla los tres productos principales de la solución: **Landing Page, Frontend Web Application y RESTful Web Services**.
 
-#### Flujo general de Deployment
+- **Flujo general de Deployment**
 
 El proceso de despliegue inicia con el desarrollo de nuevas funcionalidades en ramas **feature**, creadas a partir de la rama **develop**. Una vez finalizada una funcionalidad, el desarrollador realiza un **Pull Request** para que los cambios sean revisados por los integrantes del equipo y se verifique el cumplimiento de las convenciones establecidas.
 
@@ -427,30 +424,13 @@ Finalmente, la rama **release** es fusionada con **main**, la cual contiene las 
 
 El flujo de trabajo aplicado se resume de la siguiente manera:
 
-```text
-feature/*
-      │
-      ▼
-develop
-      │
-      ▼
-release/vX.Y.Z
-      │
-      ▼
-main
-      │
-      ▼
-Deployment
-      │
-      ▼
-Production
+```
+feature/* -> develop -> release/vX.Y.Z -> main -> Deployment -> Production
 ```
 
 En caso de detectarse un error crítico en producción, el equipo utilizará ramas **hotfix**, las cuales serán creadas a partir de **main**. Una vez corregido y validado el problema, los cambios serán integrados tanto en **main** como en **develop**, manteniendo sincronizadas las versiones del código fuente.
 
----
-
-#### Landing Page Deployment
+- **Landing Page Deployment**
 
 La **Landing Page de CultivaTech** será desarrollada utilizando **HTML5, CSS3 y JavaScript** y será publicada mediante **GitHub Pages**, aprovechando su integración con los repositorios de GitHub para el alojamiento de sitios web estáticos.
 
@@ -465,35 +445,9 @@ El proceso de despliegue contempla las siguientes actividades:
 7. GitHub Pages utiliza el contenido configurado del repositorio para publicar la Landing Page.
 8. Se verifica que la página se encuentre disponible correctamente mediante HTTPS.
 
-El flujo de despliegue de la Landing Page puede representarse de la siguiente manera:
-
-```text
-GitHub Repository
-       │
-       ▼
-feature/*
-       │
-       ▼
-develop
-       │
-       ▼
-release/vX.Y.Z
-       │
-       ▼
-main
-       │
-       ▼
-GitHub Pages
-       │
-       ▼
-Published Landing Page
-```
-
 Este procedimiento permitirá mantener una versión estable de la Landing Page y facilitar la publicación de nuevas versiones conforme avance el desarrollo de CultivaTech.
 
----
-
-#### Frontend Web Application Deployment
+- **Frontend Web Application Deployment**
 
 La **Frontend Web Application de CultivaTech** será desarrollada utilizando **Angular, TypeScript y Angular Material**, siguiendo los principios de Material Design definidos para la solución.
 
@@ -512,41 +466,9 @@ El proceso de despliegue seguirá las siguientes actividades:
 9. Los archivos generados son publicados en el servicio de alojamiento web o cloud seleccionado para el proyecto.
 10. Finalmente, se verifica el acceso y funcionamiento de la aplicación en el entorno de producción.
 
-El flujo general será:
-
-```text
-GitHub Repository
-       │
-       ▼
-feature/*
-       │
-       ▼
-develop
-       │
-       ▼
-release/vX.Y.Z
-       │
-       ▼
-main
-       │
-       ▼
-npm install
-       │
-       ▼
-Angular Production Build
-       │
-       ▼
-Cloud Hosting
-       │
-       ▼
-Published Frontend Application
-```
-
 Durante la validación del despliegue se verificará principalmente la carga correcta de las vistas, navegación entre funcionalidades, funcionamiento de los componentes de Angular Material y comunicación con los Web Services de CultivaTech.
 
----
-
-#### RESTful Web Services Deployment
+- **RESTful Web Services Deployment**
 
 Los **RESTful Web Services de CultivaTech** serán desarrollados utilizando **Java, Spring Boot y Spring Data JPA**, proporcionando los servicios necesarios para la comunicación entre la Frontend Web Application y los datos de la solución.
 
@@ -567,36 +489,6 @@ El proceso contemplará las siguientes actividades:
 11. Se verifica la disponibilidad de los endpoints REST y su correcta comunicación con la base de datos.
 12. Finalmente, se valida la documentación de los servicios mediante **OpenAPI / Swagger**.
 
-El flujo general será:
-
-```text
-GitHub Repository
-       │
-       ▼
-feature/*
-       │
-       ▼
-develop
-       │
-       ▼
-Unit / Integration Tests
-       │
-       ▼
-release/vX.Y.Z
-       │
-       ▼
-main
-       │
-       ▼
-Spring Boot Build
-       │
-       ▼
-Cloud / Server Environment
-       │
-       ▼
-RESTful Web Services
-```
-
 Durante la validación del despliegue se verificará:
 
 - Correcta compilación del proyecto.
@@ -607,9 +499,7 @@ Durante la validación del despliegue se verificará:
 - Disponibilidad de la documentación OpenAPI mediante Swagger.
 - Correcta configuración de las variables necesarias para el entorno de producción.
 
----
-
-#### Seguridad y disponibilidad
+- **Seguridad y disponibilidad**
 
 El proceso de despliegue de CultivaTech considera diferentes medidas para mantener la estabilidad y seguridad de los productos publicados.
 
@@ -627,14 +517,12 @@ Entre las principales medidas se encuentran:
 
 Estas medidas permitirán reducir los riesgos asociados a la publicación de nuevas versiones y facilitar la identificación y corrección de posibles problemas durante el ciclo de vida de CultivaTech.
 
----
-
-#### Configuración del entorno de producción
+- **Configuración del entorno de producción**
 
 La configuración del entorno de producción considera los principales productos tecnológicos que conforman la solución CultivaTech y las tecnologías utilizadas para su implementación.
 
 | **Producto** | **Tecnología** | **Plataforma de despliegue** |
-|---|---|---|
+| :--- | :--- | :--- |
 | Landing Page | HTML5, CSS3, JavaScript | GitHub Pages |
 | Frontend Web Application | Angular + TypeScript + Angular Material | Servicio de alojamiento web / Cloud |
 | RESTful Web Services | Java + Spring Boot + Spring Data JPA | Servidor / Servicio Cloud |
