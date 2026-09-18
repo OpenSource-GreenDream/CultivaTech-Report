@@ -59,8 +59,52 @@ Finalmente, estos wireframes complementan la gestión de Productos e Inventario.
 </p>
 
 ## 4.4.2. Web Applications Wireflow Diagrams.
+Los Wireflow Diagrams de CultivaTech representan visualmente los principales flujos de navegación e interacción del usuario dentro de la aplicación web. Estos diagramas muestran el recorrido entre las diferentes interfaces y funcionalidades del sistema, permitiendo comprender la navegación e identificar posibles problemas de usabilidad. El Wireflow Diagram de CultivaTech representa el recorrido del usuario desde el acceso o registro en la aplicación hasta la navegación por sus principales funcionalidades. El flujo muestra la interacción con el panel principal y el acceso a diferentes módulos para consultar información, realizar registros de productos, gestionar datos de sensores y configurar notificaciones, evidenciando cómo se conectan las distintas interfaces del sistema.
 
+<p align="center">
+<img src="assets/chapter-04/wireflow.png" alt="Products and inventory wireframes" style="width: 700px;">
+</p>
 
 ## 4.4.2. Web Applications Mock-ups.
+Los Mock-ups de CultivaTech representan visualmente las principales interfaces de la aplicación web y permiten observar cómo el usuario interactuará con sus funcionalidades. Incluyen pantallas para la gestión de usuarios, monitoreo de sensores y zonas, alertas y notificaciones, así como la gestión de inventario y productos.
+
+<p align="center">
+<img src="assets/chapter-04/mockup.png" alt="Products and inventory wireframes" style="width: 700px;">
+</p>
 
 ## 4.4.3. Web Applications User Flow Diagrams.
+El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que realiza un usuario al interactuar con la plataforma web CultivaTech. Estos diagramas permiten representar los diferentes recorridos dentro del sistema para acceder al monitoreo de las tierras de cultivo, consultar la información obtenida mediante dispositivos IoT y visualizar las proyecciones generadas a partir de los datos históricos.
+**User Flow 1: Registro y Activación de Cuenta**
+
+**User Stories relacionadas:** US06, US08
+
+**Flujos incluidos:** Happy Path, email inválido, contraseña débil, email ya registrado, contraseñas no coinciden, cancelación, enlace expirado.
+
+<p align="center">
+<img src="assets/chapter-04/userflow-1.png" alt="user flow" style="width: 500px; height: 500px;">
+</p>
+
+---
+
+**User Flow 2: Configuración de un Nuevo Sensor IoT**
+
+**User Stories relacionadas:** US14
+
+**Flujos incluidos:** Happy Path, código de sensor inválido, código ya registrado, sensor sin batería o sin conexión, cancelación, campos incompletos.
+
+<p align="center">
+<img src="assets/chapter-04/userflow-2.png" alt="user flow" style="width: 500px; height: 500px;">
+</p>
+
+
+---
+
+**User Flow 3: Consulta de Recomendación de Riego**
+
+**User Stories relacionadas:** US13
+
+**Flujos incluidos:** Happy Path, no hay datos del sensor (sensor sin conexión), humedad óptima, humedad excesiva, usuario descarta recomendación, usuario modifica umbrales, usuario consulta historial.
+
+<p align="center">
+<img src="assets/chapter-04/userflow-3.png" alt="user flow" style="width: 500px; height: 500px;">
+</p>
