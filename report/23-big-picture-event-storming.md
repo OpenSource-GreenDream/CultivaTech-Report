@@ -6,8 +6,10 @@ Durante la sesión, se identificaron los eventos significativos que ocurren en e
 
 A continuación, se presentan los principales elementos identificados en el Big Picture Event Storming:
 
-### Domain Events (Eventos de Dominio)
+- **Domain Events (Eventos de Dominio)**
+
 Eventos en tiempo pasado que ocurren en el proceso de negocio:
+
 * **Soil Prepared** (Tierra preparada)
 * **Crop Planted** (Cultivo sembrado)
 * **Soil Moisture Changed** (Humedad del suelo cambió)
@@ -24,21 +26,26 @@ Eventos en tiempo pasado que ocurren en el proceso de negocio:
 * **Traceability QR Generated** (Código QR de trazabilidad generado)
 * **Sustainability Report Generated** (Reporte de sostenibilidad generado)
 
-### Actors (Actores)
+- **Actors (Actores)**
+
 Personas o sistemas que ejecutan comandos o generan eventos:
+
 * **Farmer (Agricultor):** Actor principal que prepara, siembra, riega, fertiliza y cosecha.
 * **Soil (Tierra/Suelo):** Actor pasivo que genera eventos de cambio de humedad y nutrientes mediante la red de sensores IoT.
 * **Weather (Clima):** Actor externo que genera alertas climáticas.
 * **Advisor / Supplier (Asesor / Proveedor):** Actor que recomienda insumos basados en los datos de suelo recolectados.
 * **End Customer (Cliente Final / B2B):** Actor que compra productos y verifica la trazabilidad.
 
-### External Systems (Sistemas Externos)
+- **External Systems (Sistemas Externos)**
+
 * **IoT Sensor Network (LoRaWAN):** Red de sensores físicos de suelo y puerta de enlace.
 * **Weather API Service:** Servicio meteorológico para alertas preventivas.
 * **E-commerce Platform / Payment Gateway:** Plataformas para gestión de ventas.
 
-### Policies (Políticas)
+- **Policies (Políticas)**
+
 Reglas de negocio que se disparan ante eventos específicos:
+
 * **When Soil Moisture drops below 30%, trigger Irrigation Recommendation:** Cuando la humedad del suelo baja del 30%, se dispara la recomendación de riego (alerta sonora y semáforo).
 * **When Nutrient N drops below 20 ppm, trigger Fertilizer Recommendation:** Cuando el nitrógeno baja de 20 ppm, se dispara la recomendación de fertilización.
 * **When Pest is Detected, trigger Pest Control Alert:** Cuando se detecta una plaga, se dispara la alerta de control de plagas al agricultor y asesor.

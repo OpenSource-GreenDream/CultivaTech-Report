@@ -1,17 +1,28 @@
 ## 2.3. Needfinding.
+
 A continuación se presentan los tres User Personas representativos de los segmentos objetivo definidos a partir de la síntesis de hallazgos de las entrevistas y el análisis cualitativo-estadístico.
 
 ### 2.3.1. User Personas.
 A continuación, se presentan las fichas de User Persona elaboradas en UXPressia para cada uno de los tres segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo características demográficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interacción.
 
 * **Segmento 1: Agricultor**
-  <img src="assets/chapter-02/user-persona-agricultor.png" alt="User Persona Agricultor" width="100%">
+  
+![User Persona Agricultor](assets/chapter-02/user-persona-agricultor.png){width=300px}
+
+\newpage
 
 * **Segmento 2: Proveedor**
-    <img src="assets/chapter-02/user-persona-proveedor.png" alt="User Persona Proveedor" width="100%">
+    
+![User Persona Proveedor](assets/chapter-02/user-persona-proveedor.png){width=300px}
+
+\newpage
+
 
 * **Segmento 3: Consumidor**
-    <img src="assets/chapter-02/user-persona-cliente.png" alt="User Persona Cliente" width="100%">
+    
+![User Persona Cliente](assets/chapter-02/user-persona-cliente.png){width=300px}
+
+\newpage
 
 ### 2.3.2. User Task Matrix.
 La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solución. Se analizan según su frecuencia de ejecución y la importancia estratégica que representan para cumplir las metas descritas en los User Personas.
@@ -37,28 +48,48 @@ A continuación, se presenta el User Journey Mapping (Mapa de Experiencia del Us
 
 * **Segmento 1: Agricultor**
   El siguiente Journey Map ilustra el proceso que sigue Marcelino, un agricultor de Huánuco, para monitorear el estado de su cultivo de zanahoria y decidir cuándo regar o fertilizar. El recorrido muestra cómo Marcelino depende de métodos tradicionales (inspección visual, experiencia personal) y enfrenta incertidumbre por la falta de datos precisos, especialmente ante cambios climáticos inesperados.
-    <img src="assets/chapter-02/user-journey-map-agricultor.png" alt="User Journey Mapping Agricultor" width="100%">
+
+![User Journey Mapping Agricultor](assets/chapter-02/user-journey-map-agricultor.png)
+
+\newpage
 
 * **Segmento 2: Proveedor**
   El siguiente Journey Map muestra el proceso de Karim, un asesor técnico de Cañete, para recomendar insumos a los agricultores. El recorrido evidencia cómo Karim realiza visitas presenciales y se basa en su experiencia, pero carece de datos reales del suelo para hacer recomendaciones precisas, lo que genera errores, pérdida de confianza y reclamos de los agricultores.
-<img src="assets/chapter-02/user-journey-map-proveedor.png" alt="User Journey Mapping Proveedor" width="100%">
+
+![User Journey Mapping Proveedor](assets/chapter-02/user-journey-map-proveedor.png)
+
+\newpage
 
 * **Segmento 3: Cliente Final**
   El siguiente Journey Map describe el proceso de Camila, una consumidora de Lima, para verificar la trazabilidad y sostenibilidad de los productos que compra en el supermercado. El recorrido muestra cómo Camila se enfrenta a información limitada y confusa sobre el origen de los productos, lo que genera desconfianza y frustración al momento de tomar decisiones de compra.
-    <img src="assets/chapter-02/user-journey-map-cliente.png" alt="User Journey Mapping Cliente" width="100%">
+   
+![User Journey Mapping Cliente](assets/chapter-02/user-journey-map-cliente.png)
+
+\newpage
 
 ### 2.3.4. Empathy Mapping.
 El Mapa de Empatía sintetiza las observaciones e impresiones recopiladas durante las entrevistas, permitiendo profundizar en los aspectos emocionales y actitudinales de los tres segmentos de usuario objetivo de CultivaTech.
 
-#### Empathy Map 1: Don Marcelino Encarnación (Agricultor Tradicional)
+- **Empathy Map 1: Don Marcelino Encarnación (Agricultor Tradicional)**
+
 El siguiente Mapa de Empatía profundiza en la experiencia de Marcelino, el agricultor de Huánuco. Se identifican sus principales pensamientos y sentimientos (incertidumbre ante el clima, preocupación por la pérdida de cosechas), lo que ve en su entorno (campos extensos, cambios climáticos), lo que oye de otros agricultores (consejos tradicionales, temor a la tecnología), lo que dice y hace (inspección manual, decisión por intuición), así como sus principales pains (falta de información precisa, esfuerzo físico) y gains (deseo de certidumbre, mejora de la productividad).
-<img src="assets/chapter-02/empathy-map-agricultor.png" alt="Empathy Map Agricultor" width="100%">
 
-#### Empathy Map 2: Karim Castillo (Proveedor de Insumos)
+![Empathy Map Agricultor](assets/chapter-02/empathy-map-agricultor.png){width=300px}
+
+\newpage
+
+- **Empathy Map 2: Karim Castillo (Proveedor de Insumos)**
+
 El siguiente Mapa de Empatía analiza la experiencia de Karim, el asesor técnico. Se exploran sus pensamientos y sentimientos (frustración por recomendaciones erróneas, necesidad de credibilidad), lo que ve (agricultores con problemas de suelo, competencia), lo que oye (reclamos de agricultores, feedback de otros asesores), lo que dice y hace (visitas a campo, recomendaciones basadas en experiencia), y sus pains (falta de datos precisos, pérdida de clientes) y gains (deseo de fidelizar clientes, incrementar ventas con recomendaciones acertadas).
-<img src="assets/chapter-02/empathy-map-proveedor.png" alt="Empathy Map Proveedor" width="100%">
 
-#### Empathy Map 3: Camila Vega (Consumidora Final)
+![Empathy Map Proveedor](assets/chapter-02/empathy-map-proveedor.png){width=300px}
+
+\newpage
+
+- **Empathy Map 3: Camila Vega (Consumidora Final)**
+
 El siguiente Mapa de Empatía se centra en la experiencia de Camila, la consumidora final. Se identifican sus pensamientos y sentimientos (deseo de transparencia, desconfianza por falta de información), lo que ve (etiquetas confusas, productos de origen desconocido), lo que oye (tendencias de alimentación saludable, testimonios de otros compradores), lo que dice y hace (búsqueda en Google, decisión por precio y apariencia), y sus pains (dificultad para verificar origen, falta de confianza) y gains (deseo de productos saludables, disposición a pagar premium por trazabilidad).
-<img src="assets/chapter-02/empathy-map-cliente.png" alt="Empathy Map Cliente" width="100%">
 
+![Empathy Map Cliente](assets/chapter-02/empathy-map-cliente.png){width=300px}
+
+\newpage
