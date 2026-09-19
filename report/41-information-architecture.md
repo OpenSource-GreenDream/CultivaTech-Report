@@ -34,43 +34,43 @@ Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a comprend
 
 ***Title Tag:*** Este tag define el título de la página y permite identificar el contenido principal de CultivaTech en los motores de búsqueda.
 
-```html
+```
 <title>CultivaTech - Monitoreo Inteligente de Cultivos con IoT</title>
 ```
 
 ***Meta Description:*** Proporciona una descripción breve del contenido y propuesta de valor de CultivaTech.
 
-```html
+```
 <meta name="description" content="CultivaTech es una solución tecnológica de GreenDream que utiliza dispositivos IoT y análisis de datos para apoyar el monitoreo y gestión de tierras de cultivo.">
 ```
 
 ***Language Tag:*** Indica el idioma principal utilizado en la página.
 
-```html
+```
 <meta http-equiv="Content-Language" content="es-PE">
 ```
 
 ***Robots Tag:*** Indica a los motores de búsqueda que la Landing Page puede ser indexada.
 
-```html
+```
 <meta name="robots" content="index, follow">
 ```
 
 ***Author Tag:*** Identifica al equipo responsable del contenido y desarrollo de la plataforma.
 
-```html
+```
 <meta name="author" content="GreenDream Team">
 ```
 
 ***Meta Viewport:*** Permite que la interfaz se adapte correctamente a diferentes tamaños de pantalla y dispositivos.
 
-```html
+```
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
 ***Canonical Tag:*** Especifica la URL principal de la Landing Page para evitar problemas relacionados con contenido duplicado.
 
-```html
+```
 <link rel="canonical" href="https://www.cultivatech.com/">
 ```
 
