@@ -6,7 +6,7 @@ Las Style Guidelines establecen los lineamientos visuales y de diseño que permi
 
 Debido a que CultivaTech está orientado principalmente a agricultores y personas involucradas en la gestión de cultivos, el diseño prioriza la claridad, legibilidad, accesibilidad y facilidad de uso. Esto resulta especialmente importante durante la visualización de información relacionada con el estado de los cultivos, las condiciones del entorno y los datos recopilados mediante sensores IoT.
 
-### 4.1.1. General Style Guidelines.
+## 4.1.1. General Style Guidelines.
 
 Las Style Guidelines definen los principales elementos que conforman la identidad visual de CultivaTech. Estos elementos serán utilizados de manera consistente tanto en la Landing Page como en la Web Application, permitiendo construir una experiencia visual uniforme y reconocible para los usuarios.
 
@@ -66,7 +66,7 @@ La aplicación consistente del espaciado contribuye a reducir la saturación vis
 
 \newpage
 
-### 4.1.2. Web Style Guidelines
+## 4.1.2. Web Style Guidelines
 
 CultivaTech cuenta con un diseño web responsive y adaptable, desarrollado para proporcionar una experiencia de usuario consistente en computadoras, tablets y dispositivos móviles. Esto permite que los usuarios puedan consultar la información de sus cultivos tanto desde espacios administrativos como directamente durante sus actividades en campo.
 

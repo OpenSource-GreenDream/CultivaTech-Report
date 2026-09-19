@@ -2,7 +2,7 @@
 
 El siguiente glosario define los términos y conceptos clave del dominio de negocio de CultivaTech, asegurando una comunicación clara y sin ambigüedades entre todos los miembros del equipo y stakeholders. Los términos están presentados en inglés (con el equivalente en español entre paréntesis) y sus definiciones están redactadas en español.
 
-### Identity & Access Management
+- **Identity & Access Management**
 
 | Term (English) | Term (Spanish) | Definition (in Spanish) |
 | :--- | :--- | :--- |
@@ -14,7 +14,7 @@ El siguiente glosario define los términos y conceptos clave del dominio de nego
 
 ---
 
-### Profiles & Preferences Management
+- **Profiles & Preferences Management**
 
 | Term (English) | Term (Spanish) | Definition (in Spanish) |
 | :--- | :--- | :--- |
@@ -25,7 +25,7 @@ El siguiente glosario define los términos y conceptos clave del dominio de nego
 
 ---
 
-### IoT Monitoring & Crop Management
+- **IoT Monitoring & Crop Management**
 
 | Term (English) | Term (Spanish) | Definition (in Spanish) |
 | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ El siguiente glosario define los términos y conceptos clave del dominio de nego
 
 ---
 
-### Payments & Subscriptions
+- **Payments & Subscriptions**
 
 | Term (English)           | Term (Spanish)       | Definition (in Spanish)                                                                                |
 |:-------------------------|:---------------------|:-------------------------------------------------------------------------------------------------------|

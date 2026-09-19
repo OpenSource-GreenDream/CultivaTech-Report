@@ -14,7 +14,7 @@
 
 ---
 
-### EPIC01: Landing Page & Marketing
+- **EPIC01: Landing Page & Marketing**
 
 | USER ID | Título | Descripción | Criterios de Aceptación | EPIC ID |
 | :--- | :--- | :--- | :--- | :--- |
@@ -26,7 +26,7 @@
 
 ---
 
-### EPIC02: Autenticación y Gestión de Usuarios
+- **EPIC02: Autenticación y Gestión de Usuarios**
 
 | USER ID | Título | Descripción | Criterios de Aceptación | EPIC ID |
 | :--- | :--- | :--- | :--- | :--- |
@@ -38,7 +38,7 @@
 
 ---
 
-### EPIC03: Monitoreo y Gestión de Sensores
+- **EPIC03: Monitoreo y Gestión de Sensores**
 
 | USER ID | Título | Descripción | Criterios de Aceptación | EPIC ID |
 | :--- | :--- | :--- | :--- | :--- |
@@ -50,7 +50,7 @@
 
 ---
 
-### EPIC04: Alertas y Notificaciones
+- **EPIC04: Alertas y Notificaciones**
 
 | USER ID | Título | Descripción | Criterios de Aceptación | EPIC ID |
 | :--- | :--- | :--- | :--- | :--- |
@@ -62,7 +62,7 @@
 
 ---
 
-### EPIC05: Inventario y Catálogo
+- **EPIC05: Inventario y Catálogo**
 
 | USER ID | Título | Descripción | Criterios de Aceptación | EPIC ID |
 | :--- | :--- | :--- | :--- | :--- |

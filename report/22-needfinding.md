@@ -2,7 +2,7 @@
 
 A continuación se presentan los tres User Personas representativos de los segmentos objetivo definidos a partir de la síntesis de hallazgos de las entrevistas y el análisis cualitativo-estadístico.
 
-### 2.3.1. User Personas.
+## 2.3.1. User Personas.
 A continuación, se presentan las fichas de User Persona elaboradas en UXPressia para cada uno de los tres segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo características demográficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interacción.
 
 * **Segmento 1: Agricultor**
@@ -24,7 +24,7 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 \newpage
 
-### 2.3.2. User Task Matrix.
+## 2.3.2. User Task Matrix.
 La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solución. Se analizan según su frecuencia de ejecución y la importancia estratégica que representan para cumplir las metas descritas en los User Personas.
 
 | Tarea | Agricultor (Frecuencia / Importancia) | Proveedor (Frecuencia / Importancia) | Cliente Final (Comprador) (Frecuencia / Importancia) |
@@ -37,13 +37,13 @@ La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que re
 | **Verificar trazabilidad y origen del producto** | Baja / Baja | Baja / Baja | Alta / Alta |
 | **Consultar pronóstico del clima para planificar riego** | Alta / Alta | Media / Alta | Baja / Media |
 
-#### Hallazgos clave de la matriz:
+- **Hallazgos clave de la matriz:**
 
 * **Agricultores:** Priorizan las tareas operativas diarias en campo (monitoreo de suelo, alertas de heladas y pronóstico del clima) con alta frecuencia e importancia.
 * **Proveedores de Insumos:** Se concentran en el análisis de datos históricos, la gestión de inventario y la generación de reportes para respaldar sus recomendaciones agronómicas.
 * **Clientes Finales:** Su interacción es altamente puntual pero crítica en el punto de venta, centrada en la verificación de trazabilidad, el origen del producto y los reportes de sostenibilidad.
 
-### 2.3.3. User Journey Mapping.
+## 2.3.3. User Journey Mapping.
 A continuación, se presenta el User Journey Mapping (Mapa de Experiencia del Usuario) que describe las etapas clave del recorrido de cada segmento objetivo frente a la solución, incluyendo los puntos de contacto, emociones y oportunidades de mejora.
 
 * **Segmento 1: Agricultor**
@@ -67,7 +67,7 @@ A continuación, se presenta el User Journey Mapping (Mapa de Experiencia del Us
 
 \newpage
 
-### 2.3.4. Empathy Mapping.
+## 2.3.4. Empathy Mapping.
 El Mapa de Empatía sintetiza las observaciones e impresiones recopiladas durante las entrevistas, permitiendo profundizar en los aspectos emocionales y actitudinales de los tres segmentos de usuario objetivo de CultivaTech.
 
 - **Empathy Map 1: Don Marcelino Encarnación (Agricultor Tradicional)**
