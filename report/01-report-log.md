@@ -10,3 +10,4 @@
 | 0.3.0   | 08/08/2026 | Silva Hualpa, Rosangela Karen    | Style guidelines y desarrollo de Mockups de web       |
 | 0.4.0   | 18/08/2026 | Santos Minaya, Renzo Peiro       | Analisis de competidores, Needfinding y big picture   |
 | 0.5.0   | 18/08/2026 | Munayco Apolaya, Maria Luisa     | Informe de configuracion de Software y sprint 1       |
+| 0.5.1   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Rediseño de model c4                                  |
