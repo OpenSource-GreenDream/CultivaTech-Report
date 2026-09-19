@@ -18,7 +18,7 @@ La identidad de CultivaTech utiliza una composición visual moderna y de fácil 
 
 La integración de estos elementos permite comunicar visualmente el compromiso de CultivaTech con la innovación tecnológica, la sostenibilidad y la mejora de la gestión agrícola.
 
-<img src="assets/chapter-04/cultivatech.png" alt="CultivaTech branding" style="width: 200px; height: 200px;">
+![CultivaTech logo](assets/chapter-04/logo.svg){width=200px}
 
 **Typography**  
 
@@ -30,7 +30,7 @@ Para los textos descriptivos, párrafos, indicadores y datos provenientes de los
 
 A continuación, se detallan las tipografías adoptadas para CultivaTech:
 
-<img src="assets/chapter-04/typography.png" alt="CultivaTech typography" style="width: 400px; height: 200px;">
+![typography](assets/chapter-04/typography.png){width=400px}
 
 **Colors**
 
@@ -44,7 +44,8 @@ La combinación de estos colores busca transmitir una identidad moderna, natural
 
 A continuación, se detallan los colores seleccionados para CultivaTech:
 
-<img src="assets/chapter-04/colors.png" alt="CultivaTech color palette" style="width: 300px; height: 150px;">
+
+![colors](assets/chapter-04/colors.png){width=400px}
 
 **Spacing**
 
@@ -54,7 +55,7 @@ El uso adecuado del espacio permite diferenciar visualmente cada grupo de inform
 
 La aplicación consistente del espaciado contribuye a reducir la saturación visual y permite que el usuario pueda identificar rápidamente la información más importante dentro de la plataforma.
 
-<img src="assets/chapter-04/spacing.png" alt="CultivaTech spacing guidelines" style="width: 300px; height: 150px;">
+![spacing](assets/chapter-04/spacing.png){width=400px}
 
 ### 4.1.2. Web Style Guidelines
 
