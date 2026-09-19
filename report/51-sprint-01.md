@@ -63,12 +63,56 @@ El Sprint Backlog del Sprint 1 contiene las actividades definidas para desarroll
 | **US05** | Documentación del proyecto | **Task 5** | Organización de la documentación | Organizar y completar la documentación correspondiente al proyecto GreenDream y la propuesta de CultivaTech. | 4 | Jorge Manuel Retuerto Rodriguez | Done |
 | **US05** | Documentación del proyecto | **Task 5.1** | Revisión de documentación | Revisar la información documentada para mantener consistencia entre la propuesta de CultivaTech y la información presentada en la Landing Page. | 2 | Jorge Manuel Retuerto Rodriguez | Done |
 
+\newpage
+
 ## 5.2.1.4. Development Evidence for Sprint Review.
+
+![evidence](assets/chapter-05/1-sprint-evidence-01.png){width=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/1-sprint-evidence-02.png){width=500px}
+
+![evidence](assets/chapter-05/1-sprint-evidence-03.png){width=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/1-sprint-evidence-04.png){width=500px}
+
+![evidence](assets/chapter-05/1-sprint-evidence-05.png){width=500px}
+
+\newpage
 
 ## 5.2.1.5. Execution Evidence for Sprint Review.
 
+![evidence](assets/chapter-05/1-deploy-evidence.png){width=500px}
+
+\newpage
+
 ## 5.2.1.6. Services Documentation Evidence for Sprint Review.
+
+Durante el sprint se elaboro el Landing Page de para presentar nuestro producto. 
+
+Se siguieron practicas UX, responsive design y se preparo la pagina para traduccion multilengua y funcionalidades para desplazamiento eficiente. Asimismo, con el acceso a la demo, se deja apertura para la introduccion al Front End en proximas entregas.
+
+* **Resumen de Logros**:
+  * Avance del Landing Page (90%, pues falta el languague-switcher). 
+  * Implementación completa de diseño responsivo, i18n, y redirecciones funcionales.
+
+\newpage
 
 ## 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
+![Deployment](assets/chapter-05/1-deployment-01.png){width=500px}
+
+\newpage
+
+![Deployment](assets/chapter-05/1-deployment-02.png){width=500px}
+
+![Deployment](assets/chapter-05/1-deployment-03.png){width=500px}
+
+\newpage
+
 ## 5.2.1.8. Team Collaboration Insights during Sprint.
+
+![Insigth](assets/chapter-05/1-insigths.png){width=400px}

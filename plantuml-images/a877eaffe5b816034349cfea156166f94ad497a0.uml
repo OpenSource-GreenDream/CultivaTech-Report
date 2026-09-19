@@ -1,0 +1,123 @@
+@startuml
+!include <C4/C4_Component.puml>
+
+' ==================== CONFIGURACIÓN ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
+}
+
+skinparam componentStyle rectangle
+skinparam rectangle {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    FontColor #0066CC
+}
+
+title <color:#0066CC><size:18>AgroTech IoT - Components Diagram (Part 1: Business Services)</size></color>
+
+' ==================== SERVICIOS DE NEGOCIO ====================
+Container_Boundary(backend, "Backend Services") {
+    
+    Container_Boundary(iam, "IAM Service") {
+        Component(iamApi, "REST API", "ASP.NET Core", "AuthenticationController, UsersController")
+        Component(userCommand, "UserCommandService", ".NET Service", "Handles SignIn and SignUp commands")
+        Component(userQuery, "UserQueryService", ".NET Service", "Handles user queries")
+        Component(facade, "IamContextFacade", ".NET Service", "ACL Facade for other contexts")
+        Component(tokenService, "TokenService", "JWT Service", "Generates and validates JWT tokens")
+        Component(hashingService, "HashingService", "BCrypt Service", "Hashes and verifies passwords")
+        Component(userRepository, "UserRepository", "EF Core", "User data access")
+    }
+    
+    Container_Boundary(profile, "Profile Service") {
+        Component(profileApi, "REST API", "ASP.NET Core", "ProfilesController")
+        Component(profileCommand, "ProfileCommandService", ".NET Service", "Handles profile commands")
+        Component(profileQuery, "ProfileQueryService", ".NET Service", "Handles profile queries")
+        Component(profileRepository, "ProfileRepository", "EF Core", "Profile data access")
+    }
+    
+    Container_Boundary(commercial, "Commercial Service") {
+        Component(commercialApi, "REST API", "ASP.NET Core", "OrdersController, ProductsController")
+        Component(orderService, "OrderService", ".NET Service", "Order management")
+        Component(productService, "ProductService", ".NET Service", "Product management")
+        Component(orderRepository, "OrderRepository", "EF Core", "Order data access")
+        Component(productRepository, "ProductRepository", "EF Core", "Product data access")
+    }
+    
+    Container_Boundary(monitoring, "Monitoring Service") {
+        Component(monitoringApi, "REST API", "ASP.NET Core", "FieldsController, DevicesController")
+        Component(fieldCommand, "FieldCommandService", ".NET Service", "Handles field commands")
+        Component(fieldQuery, "FieldQueryService", ".NET Service", "Handles field queries")
+        Component(deviceCommand, "DeviceCommandService", ".NET Service", "Handles device commands")
+        Component(deviceQuery, "DeviceQueryService", ".NET Service", "Handles device queries")
+        Component(fieldRepository, "FieldRepository", "EF Core", "Field data access")
+        Component(deviceRepository, "DeviceRepository", "EF Core", "Device data access")
+    }
+}
+
+' ==================== BASE DE DATOS ====================
+ContainerDb(mysqlDb, "MySQL Database", "MySQL 8.0", "Main system database")
+
+' ==================== EXTERNOS ====================
+System_Ext(client, "Client", "Web/Mobile Frontend")
+System_Ext(weatherApi, "Weather API", "External service")
+System_Ext(satelliteApi, "Satellite API", "External service")
+System_Ext(paymentGateway, "Payment Gateway", "External service")
+
+' ==================== RELACIONES - CLIENTES ====================
+Rel(client, iamApi, "Authenticates", "HTTPS/REST")
+Rel(client, profileApi, "Manages profile", "HTTPS/REST")
+Rel(client, commercialApi, "Manages orders and products", "HTTPS/REST")
+Rel(client, monitoringApi, "Manages fields and devices", "HTTPS/REST")
+
+' ==================== RELACIONES - IAM ====================
+Rel(iamApi, userCommand, "Delegates to", "Internal")
+Rel(iamApi, userQuery, "Delegates to", "Internal")
+Rel(facade, userCommand, "Uses", "Internal")
+Rel(facade, userQuery, "Uses", "Internal")
+Rel(userCommand, hashingService, "Uses", "Internal")
+Rel(userCommand, tokenService, "Uses", "Internal")
+Rel(userCommand, userRepository, "Uses", "Internal")
+Rel(userQuery, userRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - PROFILE ====================
+Rel(profileApi, profileCommand, "Delegates to", "Internal")
+Rel(profileApi, profileQuery, "Delegates to", "Internal")
+Rel(profileCommand, profileRepository, "Uses", "Internal")
+Rel(profileQuery, profileRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - COMMERCIAL ====================
+Rel(commercialApi, orderService, "Delegates to", "Internal")
+Rel(commercialApi, productService, "Delegates to", "Internal")
+Rel(orderService, orderRepository, "Uses", "Internal")
+Rel(orderService, productRepository, "Uses", "Internal")
+Rel(productService, productRepository, "Uses", "Internal")
+Rel(orderService, paymentGateway, "Processes payment", "REST API")
+
+' ==================== RELACIONES - MONITORING ====================
+Rel(monitoringApi, fieldCommand, "Delegates to", "Internal")
+Rel(monitoringApi, fieldQuery, "Delegates to", "Internal")
+Rel(monitoringApi, deviceCommand, "Delegates to", "Internal")
+Rel(monitoringApi, deviceQuery, "Delegates to", "Internal")
+Rel(fieldCommand, fieldRepository, "Uses", "Internal")
+Rel(fieldQuery, fieldRepository, "Uses", "Internal")
+Rel(deviceCommand, deviceRepository, "Uses", "Internal")
+Rel(deviceQuery, deviceRepository, "Uses", "Internal")
+Rel(fieldCommand, weatherApi, "Gets weather data", "REST API")
+Rel(fieldCommand, satelliteApi, "Gets satellite images", "REST API")
+
+' ==================== RELACIONES - BASE DE DATOS ====================
+Rel(userRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(profileRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(orderRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(productRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(fieldRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(deviceRepository, mysqlDb, "Reads/Writes", "EF Core")
+
+@enduml

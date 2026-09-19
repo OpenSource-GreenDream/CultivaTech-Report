@@ -72,13 +72,13 @@
 | **US24** | Visualización de Catálogo de Productos | Como cliente, deseo consultar el catálogo de productos agrícolas para conocer los productos disponibles. | **Scenario 1: Catálogo disponible**<br>• **Given** el usuario accede al catálogo<br>• **When** la página termina de cargar<br>• **Then** se muestran productos disponibles con su información básica<br><br>**Scenario 2: Catálogo sin productos**<br>• **Given** no existen productos registrados<br>• **When** se accede al catálogo<br>• **Then** el sistema informa que no hay productos | EPIC5 |
 | **US25** | Visualización de Detalle de Producto | Como cliente, deseo consultar el detalle de un producto para conocer mejor sus características antes de adquirirlo. | **Scenario 1: Consulta de producto**<br>• **Given** el usuario visualiza el catálogo<br>• **When** selecciona un producto<br>• **Then** se muestra el detalle con su información completa<br><br>**Scenario 2: Producto no disponible**<br>• **Given** el producto no está disponible<br>• **When** consulta su detalle<br>• **Then** el sistema informa que no está disponible | EPIC5 |
 
-/newpage
+\newpage
 
 ## 3.2. Impact Mapping
 
-![Impact Mappin](assets/chapter-03/impact-mapping.png)
+![Impact Mappin](assets/chapter-03/impact-mapping.png){height=500px}
 
-/newpage
+\newpage
 
 ## 3.3. Product Backlog
 
