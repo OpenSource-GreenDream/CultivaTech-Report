@@ -1,0 +1,42 @@
+@startuml
+!include <C4/C4_Context.puml>
+
+' ==================== LIGHT THEME CONFIGURATION ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
+}
+
+title <color:#0066CC><size:18>AgroTech IoT - System Context Diagram</size></color>
+
+' ==================== PERSONS ====================
+Person(farmer, "Farmer", "Main user who monitors their crops and manages their farm")
+Person(admin, "Administrator", "Manages products, orders, and oversees the system")
+
+' ==================== MAIN SYSTEM ====================
+System(agrotech, "AgroTech IoT Platform", "Smart crop monitoring and e-commerce platform")
+
+' ==================== EXTERNAL SYSTEMS ====================
+System_Ext(weatherApi, "Weather API", "Provides real-time weather data and forecasts")
+System_Ext(satelliteApi, "Satellite API", "Provides satellite imagery for crop health analysis")
+System_Ext(recommendationEngine, "Recommendation Engine", "Generates AI-based irrigation recommendations")
+System_Ext(paymentGateway, "Payment Gateway", "Processes payments for orders and subscriptions")
+System_Ext(emailService, "Email Service", "Sends email notifications and alerts")
+
+' ==================== RELATIONSHIPS ====================
+Rel(farmer, agrotech, "Monitors crops, receives alerts, purchases products", "HTTPS/REST API")
+Rel(admin, agrotech, "Manages products, oversees orders and users", "HTTPS/REST API")
+
+Rel(agrotech, weatherApi, "Fetches weather forecast data", "HTTPS/REST API")
+Rel(agrotech, satelliteApi, "Fetches satellite images", "HTTPS/REST API")
+Rel(agrotech, recommendationEngine, "Sends sensor data and receives recommendations", "Webhook/REST API")
+Rel(agrotech, paymentGateway, "Processes payments for orders", "HTTPS/REST API")
+Rel(agrotech, emailService, "Sends email notifications", "SMTP/HTTP")
+
+@enduml

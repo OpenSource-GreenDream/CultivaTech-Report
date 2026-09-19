@@ -1,0 +1,75 @@
+@startuml
+!include <C4/C4_Container.puml>
+
+' ==================== LIGHT THEME CONFIGURATION ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
+}
+
+title <color:#0066CC><size:18>AgroTech IoT - Container Diagram</size></color>
+
+' ==================== PERSONS ====================
+Person(farmer, "Farmer", "Main user who monitors their crops")
+Person(admin, "Administrator", "Manages products and oversees the system")
+
+' ==================== CONTAINERS ====================
+Container(webApp, "Web Application", "Vue 3 / Vite", "Web interface for farmers and administrators")
+Container(mobileApp, "Mobile Application", "Flutter / Dart", "Mobile app for field monitoring")
+Container(apiGateway, "API Gateway", ".NET 10 / YARP", "Single entry point, authentication and routing")
+
+Container_Boundary(backend, "Backend Services (Microservices)") {
+    Container(iamService, "IAM Service", ".NET 10", "Authentication, authorization and user management")
+    Container(profileService, "Profile Service", ".NET 10", "Farmer profile management")
+    Container(commercialService, "Commercial Service", ".NET 10", "Product and order management")
+    Container(monitoringService, "Monitoring Service", ".NET 10", "Field and monitoring data management")
+    Container(stockService, "Stock Service", ".NET 10", "Inventory control")
+    Container(notificationService, "Notification Service", ".NET 10", "Notification delivery")
+    Container(communityService, "Community Service", ".NET 10", "Community profiles and comments management")
+    Container(analyticsService, "Analytics Service", ".NET 10", "Report generation and data analysis")
+}
+
+ContainerDb(mysqlDb, "MySQL Database", "MySQL 8.0", "Main system database")
+
+' ==================== EXTERNAL SYSTEMS ====================
+System_Ext(weatherApi, "Weather API", "Provides weather data")
+System_Ext(satelliteApi, "Satellite API", "Provides satellite imagery")
+System_Ext(paymentGateway, "Payment Gateway", "Processes payments")
+
+' ==================== RELATIONSHIPS ====================
+Rel(farmer, webApp, "Uses", "HTTPS")
+Rel(farmer, mobileApp, "Uses", "HTTPS")
+Rel(admin, webApp, "Uses", "HTTPS")
+
+Rel(webApp, apiGateway, "Consumes API", "HTTPS/REST")
+Rel(mobileApp, apiGateway, "Consumes API", "HTTPS/REST")
+
+Rel(apiGateway, iamService, "Routes to", "HTTP")
+Rel(apiGateway, profileService, "Routes to", "HTTP")
+Rel(apiGateway, commercialService, "Routes to", "HTTP")
+Rel(apiGateway, monitoringService, "Routes to", "HTTP")
+Rel(apiGateway, stockService, "Routes to", "HTTP")
+Rel(apiGateway, notificationService, "Routes to", "HTTP")
+Rel(apiGateway, communityService, "Routes to", "HTTP")
+Rel(apiGateway, analyticsService, "Routes to", "HTTP")
+
+Rel(iamService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(profileService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(commercialService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(monitoringService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(stockService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(notificationService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(communityService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(analyticsService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+
+Rel(monitoringService, weatherApi, "Queries", "REST API")
+Rel(monitoringService, satelliteApi, "Queries", "REST API")
+Rel(commercialService, paymentGateway, "Processes payment", "REST API")
+
+@enduml
