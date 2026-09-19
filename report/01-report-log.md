@@ -27,9 +27,13 @@ planificación, desarrollo, documentación y presentación de la solución.
 
 [Repositorio de la organizacion GreenDream](https://github.com/OpenSource-GreenDream){witdh=500px}
 
+\newpage
+
 - Informe
 
-![Registro de colaboradores del informe tv1](assets/1-collaborators-report.png){witdh=500px}
+![Registro de colaboradores del informe tv1](assets/1-collaborators-report.png){height=500px}
+
+\newpage
 
 - Landing Page
 

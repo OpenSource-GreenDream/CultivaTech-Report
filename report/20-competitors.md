@@ -4,7 +4,7 @@
 
 Para la solución CultivaTech desarrollada por GreenDream, se ha realizado un análisis comparativo frente a los principales competidores en el sector de la Agricultura 4.0 a nivel nacional e internacional.
 
-### 2.1.1. Análisis competitivo
+## 2.1.1. Análisis competitivo
 
 A continuación, se presenta la matriz de análisis comparativo de CultivaTech frente a las alternativas existentes en el mercado:
 
@@ -18,7 +18,7 @@ A continuación, se presenta la matriz de análisis comparativo de CultivaTech f
 | **Dependencia de Conectividad** | Red LoRaWAN (Funciona sin cobertura celular 4G). | Celular 4G / Wi-Fi / LoRa. | Celular 4G / Satelital. | Requiere internet móvil constante. |
 | **Análisis Predictivo** | Predicción de siembra y rendimiento por cosechas previas. | Telemetría en tiempo real sin enfoque predictivo directo. | Recomendaciones automáticas de riego. | Recomendaciones de balance hídrico. |
 
-### 2.1.2. Estrategias y tácticas frente a competidores
+## 2.1.2. Estrategias y tácticas frente a competidores
 
 Con el fin de posicionar a CultivaTech de manera competitiva y lograr la adopción en el sector agrícola peruano, se establecen las siguientes estrategias y tácticas:
 

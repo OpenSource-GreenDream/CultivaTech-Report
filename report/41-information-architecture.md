@@ -2,7 +2,7 @@
 
 La arquitectura de información de CultivaTech se ha definido con el propósito de organizar los contenidos y funcionalidades de la plataforma de manera clara, accesible y comprensible para los usuarios. La estructura contempla tanto la Landing Page, orientada a presentar la solución y facilitar el acceso a la plataforma, como la Web Application, destinada al monitoreo y gestión de los cultivos. De esta manera, los visitantes podrán conocer la propuesta de CultivaTech, solicitar una demostración o iniciar sesión, mientras que los usuarios registrados podrán acceder a las funcionalidades de monitoreo y análisis disponibles en la aplicación.
 
-### 4.2.1. Organization Systems.
+## 4.2.1. Organization Systems.
 
 CultivaTech organizará visualmente la información de acuerdo con su importancia y el contexto en el que se encuentre el usuario. Para ello, se aplicarán diferentes criterios de jerarquización y distribución de contenido tanto en la Landing Page como en la Web Application:
 
@@ -14,7 +14,7 @@ CultivaTech organizará visualmente la información de acuerdo con su importanci
 
 - Para la interpretación de información histórica y geográfica, CultivaTech empleará estructuras visuales que permitan relacionar diferentes variables. Los datos recopilados podrán presentarse mediante gráficos, indicadores y representaciones del terreno que faciliten la identificación de cambios y tendencias en las condiciones del cultivo.
 
-### 4.2.2. Labeling Systems.
+## 4.2.2. Labeling Systems.
 
 CultivaTech utilizará un sistema de etiquetas consistente que permita identificar fácilmente las secciones, funcionalidades, métricas y acciones disponibles. El lenguaje empleado buscará mantener un equilibrio entre los términos relacionados con la agricultura y expresiones comprensibles para los diferentes tipos de usuario.
 
@@ -28,7 +28,7 @@ CultivaTech utilizará un sistema de etiquetas consistente que permita identific
 
 - ***Información legal:*** Se utilizará la etiqueta "Términos y Condiciones" para permitir que el visitante pueda acceder fácilmente a las condiciones de uso de CultivaTech.
 
-### 4.2.3. SEO Tags and Meta Tags
+## 4.2.3. SEO Tags and Meta Tags
 
 Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a comprender e identificar el contenido de una página. Por otro lado, los meta tags proporcionan información como la descripción, idioma y autor. En CultivaTech, estos elementos estarán orientados principalmente a la Landing Page, debido a que corresponde al contenido público de la plataforma.
 
@@ -74,7 +74,7 @@ Los SEO tags son etiquetas HTML que ayudan a los motores de búsqueda a comprend
 <link rel="canonical" href="https://www.cultivatech.com/">
 ```
 
-### 4.2.4. Searching Systems
+## 4.2.4. Searching Systems
 
 CultivaTech utilizará diferentes mecanismos de navegación, búsqueda y filtrado para facilitar que los usuarios encuentren la información que necesitan tanto en la Landing Page como en la Web Application.
 
@@ -90,7 +90,7 @@ CultivaTech utilizará diferentes mecanismos de navegación, búsqueda y filtrad
 
 - ***Búsqueda de socios y reportes:*** Los administradores de cooperativas podrán localizar información correspondiente a socios o lotes específicos y acceder a los datos consolidados disponibles en la plataforma.
 
-### 4.2.5. Navigation Systems
+## 4.2.5. Navigation Systems
 
 El sistema de navegación de CultivaTech permitirá que los usuarios se desplacen fácilmente entre los contenidos de la Landing Page y las funcionalidades disponibles en la Web Application.
 
