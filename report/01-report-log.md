@@ -14,6 +14,7 @@
 | 0.5.1   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Rediseño de model c4                                  |
 | 0.6.0   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Cierre de capitulo V con evidencias tv1               |
 | 1.0.0   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Cierre de informe para entrega tv1                    |
+| 2.0.0   | 8/10/2026  | Retuerto Rodriguez, Jorge Manuel | Registro de Sprint 2 y cierre de tb1                  |
 
 \newpage
 
@@ -38,3 +39,9 @@ planificación, desarrollo, documentación y presentación de la solución.
 - Landing Page
 
 ![Registro de colaboradores del landing page](assets/chapter-05/1-insigths.png){witdh=500px}
+
+\newpage
+
+- Front End
+
+![Registro de colaboradores del front end](assets/chapter-05/2-insigths-01.png){witdh=500px}
