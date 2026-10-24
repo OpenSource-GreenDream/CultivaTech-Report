@@ -33,14 +33,10 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
 | Renzo Piero Santos Minaya | `RSSint` | C | C | C | L | C | C |
 | Rosangela Karen Silva Hualpa | `amazcoffee2` | C | C | L | C | C | L |
 
-## 5.2.2.3. Sprint Backlog 2
-Tabla con el detalle de las tareas asignadas para cumplir con las historias de usuario del Sprint 2.
 
 ## 5.2.2.3. Sprint Backlog 2
 
 El Sprint Backlog 2 contiene las User Stories y tareas priorizadas para el desarrollo de las principales funcionalidades de CultivaTech. Las actividades fueron distribuidas entre los bounded contexts trabajados durante el sprint, incluyendo Identity & Access Management, Analytics Management, Monitoring Management, Stock Management y Notification Management.
-
-## 5.2.2.3. Sprint Backlog 2
 
 | User Story ID | User Story Title | Work-item / Task ID | Task Title | Description | Estimation (Hours) | Assigned to | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :--- |
