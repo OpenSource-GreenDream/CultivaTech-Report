@@ -38,6 +38,7 @@ title <color:#0066CC><size:18>AgroTech IoT - Database Diagram</size></color>
 hide methods
 hide stereotypes
 
+' ==================== IAM CONTEXT ====================
 table(users) {
   * primary_key(id) : INT
   --
@@ -45,6 +46,22 @@ table(users) {
   password_hash : TEXT
   created_at : DATETIME
   updated_at : DATETIME
+}
+
+table(roles) {
+  * primary_key(id) : INT
+  --
+  name : VARCHAR(50) UNIQUE
+  description : VARCHAR(255)
+  created_at : DATETIME
+  updated_at : DATETIME
+}
+
+table(user_roles) {
+  * foreign_key(primary_key(user_id)) : INT
+  * foreign_key(primary_key(role_id)) : INT
+  --
+  created_at : DATETIME
 }
 
 table(profiles) {
@@ -59,6 +76,7 @@ table(profiles) {
   updated_at : DATETIME
 }
 
+' ==================== OPERATIONAL CONTEXTS ====================
 table(fields) {
   * primary_key(id) : INT
   --
@@ -111,7 +129,7 @@ table(products) {
 table(orders) {
   * primary_key(id) : INT
   --
-  foreign_key(profile_id) : VARCHAR(255)
+  foreign_key(profile_id) : INT
   foreign_key(product_id) : INT
   product_name : VARCHAR(255)
   quantity : INT
@@ -148,7 +166,7 @@ table(notifications) {
 table(community_profiles) {
   * primary_key(id) : INT
   --
-  foreign_key(profile_id) : VARCHAR(50)
+  foreign_key(profile_id) : INT
   nickname : VARCHAR(100)
   reputation_score : INT
   public_bio : VARCHAR(500)
@@ -160,8 +178,8 @@ table(community_profiles) {
 table(comments) {
   * primary_key(id) : INT
   --
-  foreign_key(author_profile_id) : VARCHAR(50)
-  foreign_key(target_profile_id) : VARCHAR(50)
+  foreign_key(author_profile_id) : INT
+  foreign_key(target_profile_id) : INT
   content : VARCHAR(1000)
   rating : INT
   created_at : DATETIME
@@ -169,7 +187,12 @@ table(comments) {
 }
 
 ' ==================== RELATIONSHIPS ====================
+' IAM Relationships
+users ||--o{ user_roles
+roles ||--o{ user_roles
 users ||--|| profiles
+
+' Profile & Operational Relationships
 profiles ||--o{ fields
 profiles ||--o{ orders
 profiles ||--o{ notifications
