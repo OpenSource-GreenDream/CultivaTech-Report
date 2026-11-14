@@ -157,36 +157,128 @@ informacion de los servicios Back End. Debido a que el desarrollo de los endpoin
 
 Asimismo, se comenzo el desarrollo del Back End, implementando los endpoints REST de los bounded contexts de Profile, Inventory, Notification, IAM, Community y Monitoring. Implementando buenas practicas de Clean Architecture y Domain Driven Design para la implementacion de los bounded contexts. 
 
+A continuación se presentan los endpoints desarrollados durante el sprint 3, junto con sus respectivas evidencias de documentación.
 
+- IAM
 
+| Method | Path | Success | Declared errors |
+|---|---|---|---|
+| POST | `/api/v1/authentication/sign-up` | 201 | 400, 409 |
+| GET | `/api/v1/users` | 200 | — |
+| GET | `/api/v1/users/{userId}` | 200 | 404 |
+| PUT | `/api/v1/users/{userId}` | 200 | 400, 404, 409 |
+| DELETE | `/api/v1/users/{userId}` | 204 | 404 |
+| GET | `/api/v1/roles` | 200 | — |
+| GET | `/api/v1/roles/{roleId}` | 200 | 404 |
+| POST | `/api/v1/roles` | 201 | 400, 409 |
+| PUT | `/api/v1/roles/{roleId}` | 200 | 400, 404 |
+| DELETE | `/api/v1/roles/{roleId}` | 204 | 404, 409 |
 
-* **Resumen de Logros**:
+- Profile and fields
 
-```EJEMPLO
-    * Avance del Front End (75%, pues se tiene una deuda tecnica a saldar en sprint 3).
-    * Implementación completa de diseño responsivo, i18n, y redirecciones funcionales.
-    * Consumo de servicios Back End mediante Mocks para la representacion de informacion.
-    * Buenas practicas de Clean Architecture y Domain Driven Design para la implementacion de los bounded contexts.
-    * Uso de patrones facade, request, response-resource, assembler y store.
+| Method | Path | Success | Declared errors |
+|---|---|---|---|
+| POST | `/api/v1/users/{userId}/profile` | 201 | 400, 409 |
+| GET | `/api/v1/users/{userId}/profile` | 200 | 400, 404 |
+| PUT | `/api/v1/users/{userId}/profile` | 200 | 400, 404 |
+| GET | `/api/v1/profiles/{profileId}/fields` | 200 | 400 |
+| GET | `/api/v1/fields/{fieldId}` | 200 | 400, 404 |
+| POST | `/api/v1/profiles/{profileId}/fields` | 201 | 400, 404 |
+| PUT | `/api/v1/fields/{fieldId}` | 200 | 400, 404 |
+| DELETE | `/api/v1/fields/{fieldId}` | 204 | 400, 404 |
 
-```
+- Inventory
 
-\newpage
+| Method | Path | Success | Declared errors |
+|---|---|---|---|
+| GET | `/api/v1/inventories` | 200 | — |
+| GET | `/api/v1/inventories/{inventoryId}` | 200 | 400, 404 |
+| GET | `/api/v1/profiles/{profileId}/inventories` | 200 | 400 |
+| GET | `/api/v1/fields/{fieldId}/inventories` | 200 | 400 |
+| POST | `/api/v1/profiles/{profileId}/inventories` | 201 | 400, 404 |
+| PUT | `/api/v1/inventories/{inventoryId}` | 200 | 400, 404 |
+| DELETE | `/api/v1/inventories/{inventoryId}` | 204 | 400, 404 |
+
+- Monitoring
+
+| Method | Path | Success | Declared errors |
+|---|---|---|---|
+| GET | `/api/v1/devices` | 200 | — |
+| GET | `/api/v1/devices/{deviceId}` | 200 | 400, 404 |
+| GET | `/api/v1/fields/{fieldId}/devices` | 200 | 400 |
+| POST | `/api/v1/fields/{fieldId}/devices` | 201 | 400, 409 |
+| PUT | `/api/v1/devices/{deviceId}` | 200 | 400, 404 |
+| DELETE | `/api/v1/devices/{deviceId}` | 204 | 400, 404, 409 |
+| GET | `/api/v1/sensor-readings` | 200 | — |
+| GET | `/api/v1/devices/{deviceId}/sensor-readings` | 200 | 400 |
+| POST | `/api/v1/devices/{deviceId}/sensor-readings` | 201 | 400, 404 |
+| DELETE | `/api/v1/sensor-readings/{sensorReadingId}` | 204 | 400, 404 |
+
+- Notifications
+
+| Method | Path | Success | Declared errors |
+|---|---|---|---|
+| POST | `/api/v1/notifications` | 201 | 400 |
+| GET | `/api/v1/notifications?profileId=` | 200 | — |
+| GET | `/api/v1/notifications/{id}` | 200 | 404 |
+| PUT | `/api/v1/notifications/{id}` | 200 | 400, 404 |
+| PATCH | `/api/v1/notifications/{id}/read` | 200 | 404 |
+| DELETE | `/api/v1/notifications/{id}` | 204 | 404 |
+
+- Community
+
+| Method | Path | Success | Declared errors |
+|---|---|---|---|
+| GET | `/api/v1/community-profiles?profile_id=` | 200 | — |
+| GET | `/api/v1/community-profiles/{id}` | 200 | 404 |
+| POST | `/api/v1/community-profiles` | 201 | 400, 409 |
+| PUT | `/api/v1/community-profiles/{id}` | 200 | 400, 404 |
+| DELETE | `/api/v1/community-profiles/{id}` | 204 | 404 |
+| GET | `/api/v1/comments?target_profile_id=&field_id=&product_id=` | 200 | — |
+| GET | `/api/v1/comments/{id}` | 200 | 404 |
+| POST | `/api/v1/comments` | 201 | 400 |
+| PUT | `/api/v1/comments/{id}` | 200 | 400, 404 |
+| DELETE | `/api/v1/comments/{id}` | 204 | 404 |
+
 
 ## 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-Back End Deployment: []()
+Back End Deployment: [https://cultivatech-backend-49n5.onrender.com/](https://cultivatech-backend-49n5.onrender.com/)
+
+Back End Swagger Deployment: [https://cultivatech-backend-49n5.onrender.com/swagger-ui/index.html](https://cultivatech-backend-49n5.onrender.com/swagger-ui/index.html)
 
 \newpage
 
-![evidence](ADJUNTAR IMAGEN){width=400px}
+Usando los servicios de *"filess.io"* se uso una base de datos ya publicada en la nube, para el desarrollo de los endpoints REST del Back End. 
+
+En primera instancia se selecciona el tipo de base de datos a usar.
+
+![evidence](assets/chapter-05/select-database.png){width=400px}
 
 \newpage
+
+En segunda instancia, con la base de datos configurada, procedemos a obtener las variables de entorno necesarias para la conexion a la base de datos.
+
+![evidence](assets/chapter-05/filess-io.png){width=400px}
+
+\newpage
+
+Se procede a configurar el archivo *application.properties* del proyecto Back End en Render.
+
+![evidence](assets/chapter-05/solution-error.png){width=400px}
+
+\newpage
+
+![evidence](assets/chapter-05/swagger-deployment.png){width=400px}
+
+\newpage
+
+**Recomendacion para el siguiente sprint**: filess.io es un tipo de base de datos compartida, permite el despligue sencillo y rápido del Back End. Sin embargo, tiene limitaciones de recursos como el limite de entidades persistidas. Por ello, se recomienda hacer un despliegue completo en Azure para el siguiente Sprint. 
 
 ## 5.2.3.8. Team Collaboration Insights during Sprint
 
 \newpage
 
-![evidence](ADJUNTAR IMAGEN){width=400px}
+![evidence](assets/chapter-05/sprint03-collab.png){width=400px}
 
 \newpage
