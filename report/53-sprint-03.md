@@ -22,13 +22,13 @@ A través de una reunión en la plataforma Google Meet, se llevó a cabo la plan
 
 En este sprint, se definieron roles de liderazgo y colaboración para las diferentes áreas del proyecto.
 
-| Team member | Github username | IAM / Profile | Analytics | Monitoring | Stock | Notifications | Documentation |
+| Team member | Github username | IAM / Profile | Responsability | Monitoring | Stock | Notifications | Documentation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Jean Pierre Condor Sandoval | `jeanpcs` | C | C |C  | C |L  | C |
 | Jorge Manuel Retuerto Rodriguez | `Calin1407` | L |C|C  | C |C  | L |
-| Maria Luisa Munayco Apolaya | `malumunayco` | C |C|C  | C |C  | C |
+| Maria Luisa Munayco Apolaya | `malumunayco` | - |L|C  | - |-  | - |
 | Renzo Piero Santos Minaya | `RSSint` | C | C |C  | C |C  | C |
-| Rosangela Karen Silva Hualpa | `amazcoffee2` | C |C|C  | C |C  | C |
+| Rosangela Karen Silva Hualpa | `amazcoffee2` | - |-|-  | - |-  | - |
 
 
 ## 5.2.3.3. Sprint Backlog 3
@@ -51,13 +51,13 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
 | US26 | Creación del Perfil de Agricultor | Task 26.2 | Implementar validaciones y restricción de acceso sin perfil | 3 | Condor Sandoval, Jean Pierre | Done |
 | US26 | Creación del Perfil de Agricultor | Task 26.3 | Integrar creación de perfil con API | 3 | Condor Sandoval, Jean Pierre | Done |
 | US27 | Registro de Lote | Task 27.1 | Diseñar formulario de registro de lotes agrícolas | 3 | Condor Sandoval, Jean Pierre | Done |
-| US27 | Registro de Lote | Task 27.2 | Implementar validaciones de dimensiones y coordenadas | 3 | Silva Hualpa, Rosangela Karen | Done |
-| US27 | Registro de Lote | Task 27.3 | Integrar registro de lotes y asociación al perfil mediante API | 4 | Silva Hualpa, Rosangela Karen | Done |
-| US28 | Visualización y Edición de Lotes | Task 28.1 | Diseñar listado y detalle de lotes registrados | 3 | Silva Hualpa, Rosangela Karen | Done |
-| US28 | Visualización y Edición de Lotes | Task 28.2 | Implementar formulario de edición de lotes | 3 | Silva Hualpa, Rosangela Karen | Done |
-| US28 | Visualización y Edición de Lotes | Task 28.3 | Integrar consulta y actualización de lotes con API | 4 | Santos Minaya, Renzo Peiro | Done |
-| US29 | Visualización de Comentarios y Calificaciones de Productos | Task 29.1 | Diseñar componente de comentarios y calificaciones | 3 | Santos Minaya, Renzo Peiro | Done |
-| US29 | Visualización de Comentarios y Calificaciones de Productos | Task 29.2 | Implementar visualización de puntuaciones y comentarios | 3 | Santos Minaya, Renzo Peiro | Done |
+| US27 | Registro de Lote | Task 27.2 | Implementar validaciones de dimensiones y coordenadas | 3 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US27 | Registro de Lote | Task 27.3 | Integrar registro de lotes y asociación al perfil mediante API | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US28 | Visualización y Edición de Lotes | Task 28.1 | Diseñar listado y detalle de lotes registrados | 3 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US28 | Visualización y Edición de Lotes | Task 28.2 | Implementar formulario de edición de lotes | 3 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US28 | Visualización y Edición de Lotes | Task 28.3 | Integrar consulta y actualización de lotes con API | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US29 | Visualización de Comentarios y Calificaciones de Productos | Task 29.1 | Diseñar componente de comentarios y calificaciones | 3 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US29 | Visualización de Comentarios y Calificaciones de Productos | Task 29.2 | Implementar visualización de puntuaciones y comentarios | 3 | Retuerto Rodriguez, Jorge Manuel | Done |
 | US29 | Visualización de Comentarios y Calificaciones de Productos | Task 29.3 | Integrar consulta de comentarios y calificaciones con API | 3 | Santos Minaya, Renzo Peiro | Done |
 | US30 | Gestión de Reputación de Productos | Task 30.1 | Diseñar panel de reputación de productos | 3 | Santos Minaya, Renzo Peiro | Done |
 | US30 | Gestión de Reputación de Productos | Task 30.2 | Implementar indicadores y resumen de calificaciones | 4 | Santos Minaya, Renzo Peiro | Done |
@@ -68,10 +68,10 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
 | US32 | Visualización de Reseñas y Calificaciones de Otros Clientes | Task 32.1 | Diseñar listado de reseñas de otros compradores | 3 | Santos Minaya, Renzo Peiro | Done |
 | US32 | Visualización de Reseñas y Calificaciones de Otros Clientes | Task 32.2 | Implementar visualización de autores y calificaciones | 3 | Santos Minaya, Renzo Peiro | Done |
 | US32 | Visualización de Reseñas y Calificaciones de Otros Clientes | Task 32.3 | Integrar consulta de reseñas con API | 3 | Santos Minaya, Renzo Peiro | Done |
-| US36 | Visualización de Indicadores Agrícolas | Task 36.1 | Diseñar dashboard de indicadores agrícolas | 4 | Munayco Apolaya, Maria Luisa | Done |
-| US36 | Visualización de Indicadores Agrícolas | Task 36.2 | Implementar gráficos de humedad, suelo y rendimiento histórico | 5 | Munayco Apolaya, Maria Luisa | Done |
-| US36 | Visualización de Indicadores Agrícolas | Task 36.3 | Integrar indicadores agrícolas con API de Analytics | 4 | Munayco Apolaya, Maria Luisa | Done |
-| US37 | Proyección de Cosechas | Task 37.1 | Diseñar interfaz de proyecciones de cosecha | 3 | Munayco Apolaya, Maria Luisa | Done |
+| US36 | Visualización de Indicadores Agrícolas | Task 36.1 | Diseñar dashboard de indicadores agrícolas | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US36 | Visualización de Indicadores Agrícolas | Task 36.2 | Implementar gráficos de humedad, suelo y rendimiento histórico | 5 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US36 | Visualización de Indicadores Agrícolas | Task 36.3 | Integrar indicadores agrícolas con API de Analytics | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
+| US37 | Proyección de Cosechas | Task 37.1 | Diseñar interfaz de proyecciones de cosecha | 3 | Retuerto Rodriguez, Jorge Manuel | Done |
 | US37 | Proyección de Cosechas | Task 37.2 | Implementar gráficos y comparación de proyecciones históricas | 5 | Retuerto Rodriguez, Jorge Manuel | Done |
 | US37 | Proyección de Cosechas | Task 37.3 | Integrar consulta y generación de proyecciones con API | 5 | Retuerto Rodriguez, Jorge Manuel | Done |
 | US38 | Análisis de Demanda y Reputación de Productos Agrícolas | Task 38.1 | Diseñar dashboard de demanda y reputación agrícola | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
@@ -80,15 +80,15 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
 | TS08 | Endpoint de Profile | Task TS08.1 | Implementar Aggregate Root de FarmerProfile y entidades de dominio | 5 | Retuerto Rodriguez, Jorge Manuel | Done |
 | TS08 | Endpoint de Profile | Task TS08.2 | Implementar Commands y Queries de creación, consulta y actualización de perfiles | 6 | Retuerto Rodriguez, Jorge Manuel | Done |
 | TS08 | Endpoint de Profile | Task TS08.3 | Implementar ProfileController con endpoints REST y autorización | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
-| TS09 | Endpoint de Gestión de Inventario | Task TS09.1 | Implementar Aggregate Root de InventoryItem y reglas de stock | 5 | Silva Hualpa, Rosangela Karen | Done |
-| TS09 | Endpoint de Gestión de Inventario | Task TS09.2 | Implementar Commands y Queries de registro, filtrado y actualización de stock | 7 | Silva Hualpa, Rosangela Karen | Done |
-| TS09 | Endpoint de Gestión de Inventario | Task TS09.3 | Implementar InventoryController con endpoints REST y validaciones | 4 | Silva Hualpa, Rosangela Karen | Done |
+| TS09 | Endpoint de Gestión de Inventario | Task TS09.1 | Implementar Aggregate Root de InventoryItem y reglas de stock | 5 | Retuerto Rodriguez, Jorge Manuel | Done |
+| TS09 | Endpoint de Gestión de Inventario | Task TS09.2 | Implementar Commands y Queries de registro, filtrado y actualización de stock | 7 | Retuerto Rodriguez, Jorge Manuel | Done |
+| TS09 | Endpoint de Gestión de Inventario | Task TS09.3 | Implementar InventoryController con endpoints REST y validaciones | 4 | Retuerto Rodriguez, Jorge Manuel | Done |
 | TS11 | Endpoint de Notification | Task TS11.1 | Implementar Aggregate Root de Notification y estados de lectura | 4 | Condor Sandoval, Jean Pierre | Done |
 | TS11 | Endpoint de Notification | Task TS11.2 | Implementar Commands y Queries de creación, consulta y marcado como leído | 6 | Condor Sandoval, Jean Pierre | Done |
 | TS11 | Endpoint de Notification | Task TS11.3 | Implementar NotificationController con endpoints REST | 4 | Condor Sandoval, Jean Pierre | Done |
-| TS12 | Endpoint del Monitoreo de dispositivos IoT | Task TS12.1 | Implementar Aggregate Root de IoTDevice y reglas de monitoreo | 5 | Munayco Apolaya, Maria Luisa | Done |
-| TS12 | Endpoint del Monitoreo de dispositivos IoT | Task TS12.2 | Implementar Commands y Queries de estado, disponibilidad y monitoreo | 6 | Munayco Apolaya, Maria Luisa | Done |
-| TS12 | Endpoint del Monitoreo de dispositivos IoT | Task TS12.3 | Implementar IoTMonitoringController con endpoints REST | 4 | Munayco Apolaya, Maria Luisa| Done |
+| TS12 | Endpoint del Monitoreo de dispositivos IoT | Task TS12.1 | Implementar Aggregate Root de IoTDevice y reglas de monitoreo | 5 | Retuerto Rodriguez, Jorge Manuel | Done |
+| TS12 | Endpoint del Monitoreo de dispositivos IoT | Task TS12.2 | Implementar Commands y Queries de estado, disponibilidad y monitoreo | 6 | Retuerto Rodriguez, Jorge Manuel | Done |
+| TS12 | Endpoint del Monitoreo de dispositivos IoT | Task TS12.3 | Implementar IoTMonitoringController con endpoints REST | 4 | Retuerto Rodriguez, Jorge Manuel| Done |
 
 \newpage
 
@@ -96,36 +96,69 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
 
 Registro de commits representativos del trabajo realizado durante el Sprint 3 en los repositorios de la organización.
 
-![evidence](ADJUNTAR IMAGEN){height=500px}
+![evidence](assets/chapter-05/s3-commit01.png){height=500px}
 
 \newpage
 
-![evidence](ADJUNTAR IMAGEN){height=500px}
+![evidence](assets/chapter-05/s3-commit02.png){height=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/s3-commit03.png){height=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/s3-commit04.png){height=500px}
 
 \newpage
 
 ## 5.2.3.5. Execution Evidence for Sprint Review
 
-![evidence](ADJUNTAR IMAGEN){height=500px}
+- Desarrollo de funcionalidades como "community", "commercial" y "analytics", dentro del Front End de la aplicación web CultivaTech, utilizando buenas prácticas de Clean Architecture y Domain Driven Design para la implementación de los bounded contexts.
+
+![evidence](assets/chapter-05/s3-front01.png){height=500px}
 
 \newpage
 
+![evidence](assets/chapter-05/s3-front02.png){height=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/s3-front03.png){height=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/s3-front04.png){height=500px}
+
+\newpage
+
+**Recomendación para el siguiente Sprint**: Continuar con la implementación del Back End, integrandolo a los servicios de Front End, y realizar mejoras en el apartado de diseño UX.
+
+
+- Desarrollo de endpoints REST para los bounded contexts de "Profile", "Inventory", "Notification", "IAM", "Community" y "Monitoring", utilizando buenas prácticas de Clean Architecture y Domain Driven Design para la implementación de los bounded contexts.
+
+![evidence](assets/chapter-05/s3-back02.png){height=500px}
+
+\newpage
+
+![evidence](assets/chapter-05/s3-back01.png){height=500px}
+
+\newpage
+
+**Recomendación para el siguiente Sprint**: Continuar con la implementación de los endpoints REST, integrandolos a los servicios de Front End.
+
 ## 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-```EJEMPLO
-Durante el sprint se elaboro el Front End para permitir al usuario
-interactuar con la aplicacion web de CultivaTech.
 
-Se siguieron practicas UX, responsive design y se preparo la pagina 
-para traduccion multilengua y funcionalidades para desplazamiento 
-eficiente. Asimismo, se integraron buenas practicas, Clean Architecture
-y Domain Driven Design para la implementacion de los bounded contexts.
+Durante el sprint se desarrollo del Front End, se dirigio a la solución de la deuda tecnica encontrada en el sprint 2, y se implementaron nuevas views para los bounded Community, Analytics y Commercial.
 
-Se hace observacion que se usaron Mocks para la representacion de
-informacion de los servicios Back End: Json server e ID Mock.
-Esto permitio al equipo de desarrollo avanzar en la implementacion
-del Front End sin depender de la implementacion de los servicios Back End.
-```
+Se hace observacion que se sigue usando Mocks para la representacion de
+informacion de los servicios Back End. Debido a que el desarrollo de los endpoints REST del Back End siguen en proceso de implementacion, y se espera que para el siguiente sprint se pueda integrar los servicios del Back End al Front End.
+
+Asimismo, se comenzo el desarrollo del Back End, implementando los endpoints REST de los bounded contexts de Profile, Inventory, Notification, IAM, Community y Monitoring. Implementando buenas practicas de Clean Architecture y Domain Driven Design para la implementacion de los bounded contexts. 
+
+
+
 
 * **Resumen de Logros**:
 
