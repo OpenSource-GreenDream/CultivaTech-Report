@@ -14,7 +14,8 @@
 | 0.5.1   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Rediseño de model c4                                  |
 | 0.6.0   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Cierre de capitulo V con evidencias tv1               |
 | 1.0.0   | 19/08/2026 | Retuerto Rodriguez, Jorge Manuel | Cierre de informe para entrega tv1                    |
-| 2.0.0   | 8/10/2026  | Retuerto Rodriguez, Jorge Manuel | Registro de Sprint 2 y cierre de tb1                  |
+| 2.0.0   | 08/10/2026  | Retuerto Rodriguez, Jorge Manuel | Registro de Sprint 2 y cierre de tb1                  |
+| 3.0.0   | 14/11/2026  | Retuerto Rodriguez, Jorge Manuel | Registro de Sprint 3 y cierre de av2                  |
 
 \newpage
 
@@ -26,13 +27,15 @@ conjunto mediante commits, revisiones, herramientas de organización y resultado
 integrados en el informe final. Se refleja la contribución de cada integrante en la 
 planificación, desarrollo, documentación y presentación de la solución.
 
+Collaboration Insigths es actualizado durante cada entrega, el historial esta adjuntado en el assets del reporte del proyecto.
+
 [Repositorio de la organizacion GreenDream](https://github.com/OpenSource-GreenDream){witdh=500px}
 
 \newpage
 
 - Informe
 
-![Registro de colaboradores del informe tv1](assets/1-collaborators-report.png){height=500px}
+![Registro de colaboradores del informe tv1](assets/insights/s03-insight-report.png){witdh=500px}
 
 \newpage
 
@@ -44,4 +47,8 @@ planificación, desarrollo, documentación y presentación de la solución.
 
 - Front End
 
-![Registro de colaboradores del front end](assets/chapter-05/2-insigths-01.png){witdh=500px}
+![Registro de colaboradores del front end](assets/insights/s03-insight-front.png){witdh=500px}
+
+- Back End
+
+![Registro de colaboradores del back end](assets/insights/s03-insight-back.png){witdh=500px}
